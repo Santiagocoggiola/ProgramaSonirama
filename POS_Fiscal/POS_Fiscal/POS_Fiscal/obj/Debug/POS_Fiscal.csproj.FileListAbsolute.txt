@@ -1,0 +1,141 @@
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.exe.config
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.exe
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.pdb
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csprojResolveAssemblyReference.cache
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.Properties.Resources.resources
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.GenerateResource.Cache
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.CoreCompileInputs.cache
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.exe
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.pdb
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\Epson_Custom.dll
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\Interop.EpsonFPHostControlX.dll
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\AxInterop.EpsonFPHostControlX.dll
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\Interop.EpsonFPHostControlX.dll
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\AxInterop.EpsonFPHostControlX.dll
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.ResolveComReference.cache
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.Form1.resources
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.dll
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\MetodosDeExtension.dll
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.xml
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\Libro\TaurusInterface.dll
+C:\Cursos\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\Libro\testDllApp.exe
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\Libro\TaurusInterface.dll
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\Libro\testDllApp.exe
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.exe.config
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.exe
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.pdb
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.dll
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\AxInterop.EpsonFPHostControlX.dll
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\Interop.EpsonFPHostControlX.dll
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.xml
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csprojResolveAssemblyReference.cache
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\Interop.EpsonFPHostControlX.dll
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\AxInterop.EpsonFPHostControlX.dll
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.ResolveComReference.cache
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.Form1.resources
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.Properties.Resources.resources
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.GenerateResource.Cache
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.CoreCompileInputs.cache
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.exe
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.pdb
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\Epson_Custom.dll
+C:\Users\kenll\OneDrive\Escritorio\Curso Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\MetodosDeExtension.dll
+\\10.0.0.4\Curso de Impresora Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.exe.config
+\\10.0.0.4\Curso de Impresora Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.exe
+\\10.0.0.4\Curso de Impresora Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.pdb
+\\10.0.0.4\Curso de Impresora Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csprojResolveAssemblyReference.cache
+\\10.0.0.4\Curso de Impresora Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.Form1.resources
+\\10.0.0.4\Curso de Impresora Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.Properties.Resources.resources
+\\10.0.0.4\Curso de Impresora Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.GenerateResource.Cache
+\\10.0.0.4\Curso de Impresora Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.CoreCompileInputs.cache
+\\10.0.0.4\Curso de Impresora Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.exe
+\\10.0.0.4\Curso de Impresora Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.pdb
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.exe.config
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.exe
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.pdb
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.dll
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.SqlServer.dll
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\Epson_Custom.dll
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\MetodosDeExtension.dll
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.xml
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.SqlServer.xml
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.AssemblyReference.cache
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.Form1.resources
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.Properties.Resources.resources
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.GenerateResource.cache
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.CoreCompileInputs.cache
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.CopyComplete
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.exe
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.pdb
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\Interop.EpsonFPHostControlX.dll
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\AxInterop.EpsonFPHostControlX.dll
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\Interop.EpsonFPHostControlX.dll
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\AxInterop.EpsonFPHostControlX.dll
+D:\Santiago\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.ResolveComReference.cache
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.exe.config
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.exe
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.pdb
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.dll
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.SqlServer.dll
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.xml
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.SqlServer.xml
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.AssemblyReference.cache
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.MenuPrincipal.resources
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.Properties.Resources.resources
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.GenerateResource.cache
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.CoreCompileInputs.cache
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.CopyComplete
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.exe
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.pdb
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.FacturaB.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.exe.config
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.exe
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\POS_Fiscal.pdb
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.dll
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.SqlServer.dll
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.xml
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\EntityFramework.SqlServer.xml
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.AssemblyReference.cache
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.FacturaA.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.FacturaB.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.MenuPrincipal.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.Properties.Resources.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.GenerateResource.cache
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.CoreCompileInputs.cache
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.csproj.CopyComplete
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.exe
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.pdb
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.FacturaA.resources
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.Facturacion.resources
+L:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.VerArticulos.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.Facturacion.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.VerArticulos.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.Stock.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.VerArtCod.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.Modificaciones.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.Proveedores.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.ProvInterno.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.Ingresos.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.IngreInterno.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.CambioPrecio.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.Cantidades.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.PMargen.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\MySql.Data.dll
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\Google.Protobuf.dll
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\Zstandard.Net.dll
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\K4os.Compression.LZ4.Streams.dll
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\BouncyCastle.Crypto.dll
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\Ubiety.Dns.Core.dll
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\System.Memory.dll
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\System.Buffers.dll
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\K4os.Compression.LZ4.dll
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\K4os.Hash.xxHash.dll
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\System.Numerics.Vectors.dll
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\MySql.Data.xml
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.NotaCreditoB.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.NotaCreditoA.resources
