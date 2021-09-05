@@ -86,6 +86,7 @@ namespace POS_Fiscal
             this.BtnCargaIng.TabIndex = 28;
             this.BtnCargaIng.Text = "Carga Ing";
             this.BtnCargaIng.UseVisualStyleBackColor = true;
+            this.BtnCargaIng.Click += new System.EventHandler(this.BtnCargaIng_Click);
             // 
             // IngreInterno
             // 

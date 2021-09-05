@@ -79,6 +79,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ingresos\CargaIngresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresos\CargaIngresos.Designer.cs">
+      <DependentUpon>CargaIngresos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FacturacionFolder\NotaCreditoB.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +198,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Ingresos\CargaIngresos.resx">
+      <DependentUpon>CargaIngresos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FacturacionFolder\NotaCreditoB.resx">
       <DependentUpon>NotaCreditoB.cs</DependentUpon>
     </EmbeddedResource>

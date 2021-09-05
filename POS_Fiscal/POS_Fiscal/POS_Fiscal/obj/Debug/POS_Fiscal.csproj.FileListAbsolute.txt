@@ -139,3 +139,4 @@ H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\System.Numeric
 H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\bin\Debug\MySql.Data.xml
 H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.NotaCreditoB.resources
 H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.NotaCreditoA.resources
+H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\Debug\POS_Fiscal.CargaIngresos.resources

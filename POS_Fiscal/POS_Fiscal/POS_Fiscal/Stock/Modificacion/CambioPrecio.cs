@@ -78,8 +78,12 @@ namespace POS_Fiscal
 
         private void BtnCambiar_Click(object sender, EventArgs e)
         {
+            string publico = TxtPublico.Text;
+            string taller = TxtTaller.Text;
+            publico = publico.Replace(",", ".");
+            taller = taller.Replace(",", ".");
             con.Open();
-            string Query = "UPDATE stock.stock SET PREPUBCIVA=" + int.Parse(TxtPublico.Text) + ", PRETA=" + int.Parse(TxtTaller.Text) + " WHERE CODIGO=" + int.Parse(codigo);
+            string Query = "UPDATE stock.stock SET PREPUBCIVA=" + publico + ", PRETA=" + taller + " WHERE CODIGO=" + int.Parse(codigo);
             Helpers.NonQuery(Query, con);
             con.Close();
         }

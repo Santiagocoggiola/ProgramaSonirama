@@ -244,16 +244,20 @@ namespace POS_Fiscal
         {
             ConectarConImpresora();
             string comp = factura.Split('-')[2];
-
+            MySqlConnection con = Helpers.newCon();          
             Printer.CargarComprobanteAsociado(factura);
             Printer.CargarDatosCliente(nombre, "", direccion, "", "", doc, dni, condicion);
             Printer.AbrirComprobante(nroCompr);
             for(int i = 0; i < list.Count; ++i)
             {
+                con.Open();
                 string preciostring = "";
                 string[] valores;
                 float monto = 0;
                 datos dat = list.ElementAt(i);
+                string Query = "UPDATE stock.stock SET CANTID=CANTID-" + dat.Cantidad + " WHERE CODIGO=" + dat.Codigo;
+                Helpers.NonQuery(Query, con);
+                con.Close();
                 float precio = dat.PrecioUnitario;
                 precio = (precio / 1.21f);
                 valores = precio.ToString().Split(',');

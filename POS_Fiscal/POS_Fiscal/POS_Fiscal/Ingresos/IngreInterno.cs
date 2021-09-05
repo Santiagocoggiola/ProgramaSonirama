@@ -23,5 +23,12 @@ namespace POS_Fiscal
             this.Hide();
             ing.Show();
         }
+
+        private void BtnCargaIng_Click(object sender, EventArgs e)
+        {
+            CargaIngresos carg = new CargaIngresos();
+            carg.Show();
+            this.Hide();
+        }
     }
 }

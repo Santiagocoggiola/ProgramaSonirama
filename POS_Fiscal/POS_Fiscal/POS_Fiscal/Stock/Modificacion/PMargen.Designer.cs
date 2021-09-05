@@ -58,12 +58,14 @@ namespace POS_Fiscal
             this.LblCant = new System.Windows.Forms.Label();
             this.LblArticulo = new System.Windows.Forms.Label();
             this.TxtPrecioLista = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtDescuento = new System.Windows.Forms.TextBox();
+            this.txtMP = new System.Windows.Forms.TextBox();
+            this.txtMT = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.LblPublico = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.LblTaller = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnBuscar
@@ -343,26 +345,26 @@ namespace POS_Fiscal
             this.TxtPrecioLista.Size = new System.Drawing.Size(89, 20);
             this.TxtPrecioLista.TabIndex = 49;
             // 
-            // textBox2
+            // txtDescuento
             // 
-            this.textBox2.Location = new System.Drawing.Point(612, 163);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(89, 20);
-            this.textBox2.TabIndex = 51;
+            this.txtDescuento.Location = new System.Drawing.Point(612, 163);
+            this.txtDescuento.Name = "txtDescuento";
+            this.txtDescuento.Size = new System.Drawing.Size(89, 20);
+            this.txtDescuento.TabIndex = 51;
             // 
-            // textBox3
+            // txtMP
             // 
-            this.textBox3.Location = new System.Drawing.Point(606, 193);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(89, 20);
-            this.textBox3.TabIndex = 52;
+            this.txtMP.Location = new System.Drawing.Point(606, 193);
+            this.txtMP.Name = "txtMP";
+            this.txtMP.Size = new System.Drawing.Size(89, 20);
+            this.txtMP.TabIndex = 52;
             // 
-            // textBox4
+            // txtMT
             // 
-            this.textBox4.Location = new System.Drawing.Point(600, 223);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(89, 20);
-            this.textBox4.TabIndex = 53;
+            this.txtMT.Location = new System.Drawing.Point(600, 223);
+            this.txtMT.Name = "txtMT";
+            this.txtMT.Size = new System.Drawing.Size(89, 20);
+            this.txtMT.TabIndex = 53;
             // 
             // label18
             // 
@@ -394,17 +396,38 @@ namespace POS_Fiscal
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // LblTaller
+            // 
+            this.LblTaller.AutoSize = true;
+            this.LblTaller.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.LblTaller.Location = new System.Drawing.Point(128, 346);
+            this.LblTaller.Name = "LblTaller";
+            this.LblTaller.Size = new System.Drawing.Size(0, 17);
+            this.LblTaller.TabIndex = 58;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label19.Location = new System.Drawing.Point(51, 346);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(65, 17);
+            this.label19.TabIndex = 57;
+            this.label19.Text = "TALLER:";
+            // 
             // PMargen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LblTaller);
+            this.Controls.Add(this.label19);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.LblPublico);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtMT);
+            this.Controls.Add(this.txtMP);
+            this.Controls.Add(this.txtDescuento);
             this.Controls.Add(this.TxtPrecioLista);
             this.Controls.Add(this.LblPecioListaAn);
             this.Controls.Add(this.LblCostoNeto);
@@ -472,11 +495,13 @@ namespace POS_Fiscal
         private System.Windows.Forms.Label LblCant;
         private System.Windows.Forms.Label LblArticulo;
         private System.Windows.Forms.TextBox TxtPrecioLista;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtDescuento;
+        private System.Windows.Forms.TextBox txtMP;
+        private System.Windows.Forms.TextBox txtMT;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label LblPublico;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label LblTaller;
+        private System.Windows.Forms.Label label19;
     }
 }
