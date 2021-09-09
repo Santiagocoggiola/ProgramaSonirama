@@ -13,7 +13,6 @@ namespace POS_Fiscal
     public partial class CambioPrecio : Form
     {
         MySqlConnection con = Helpers.newCon();
-        MySqlCommand command;
         MySqlDataReader mdr;
         string codigo;
         string digito;
@@ -80,10 +79,21 @@ namespace POS_Fiscal
         {
             string publico = TxtPublico.Text;
             string taller = TxtTaller.Text;
+            string tarjeta;
+            float interes = 0;
+            string Query = "SELECT * FROM stock.tarjeta WHERE IDTARJETA=1";
+            con.Open();
+            MySqlDataReader rd = Helpers.readQuery(Query, con);
+            if (rd.Read())
+            {
+                interes = rd.GetFloat("INTERES");
+            }
+            con.Close();
+            tarjeta = (interes * (float.Parse(publico))).ToString();
             publico = publico.Replace(",", ".");
             taller = taller.Replace(",", ".");
             con.Open();
-            string Query = "UPDATE stock.stock SET PREPUBCIVA=" + publico + ", PRETA=" + taller + " WHERE CODIGO=" + int.Parse(codigo);
+            Query = "UPDATE stock.stock SET PREPUBCIVA=" + publico + ", PRETA=" + taller + ", PRETARG=" + taller + " WHERE CODIGO=" + int.Parse(codigo);
             Helpers.NonQuery(Query, con);
             con.Close();
         }

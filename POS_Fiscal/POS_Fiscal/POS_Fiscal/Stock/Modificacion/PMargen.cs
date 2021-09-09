@@ -83,7 +83,7 @@ namespace POS_Fiscal
                 descuento = 1;
             }
 
-            publico = preciocosto * margenpublico;
+            publico = preciocosto * margenpublico * 1.21f;
             taller = preciocosto * margentaller;
             string tallernew = taller.ToString();
             tallernew = tallernew.Replace(",", ".");

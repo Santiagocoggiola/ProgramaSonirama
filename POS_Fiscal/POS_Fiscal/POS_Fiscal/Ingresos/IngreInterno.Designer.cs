@@ -30,16 +30,14 @@ namespace POS_Fiscal
         private void InitializeComponent()
         {
             this.BtnAtras = new System.Windows.Forms.Button();
-            this.BtnModificar = new System.Windows.Forms.Button();
             this.BtnConsultas = new System.Windows.Forms.Button();
-            this.BtnCargaSt = new System.Windows.Forms.Button();
             this.BtnCargaIng = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnAtras
             // 
             this.BtnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAtras.Location = new System.Drawing.Point(107, 340);
+            this.BtnAtras.Location = new System.Drawing.Point(107, 267);
             this.BtnAtras.Name = "BtnAtras";
             this.BtnAtras.Size = new System.Drawing.Size(150, 40);
             this.BtnAtras.TabIndex = 32;
@@ -47,35 +45,16 @@ namespace POS_Fiscal
             this.BtnAtras.UseVisualStyleBackColor = true;
             this.BtnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
             // 
-            // BtnModificar
-            // 
-            this.BtnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnModificar.Location = new System.Drawing.Point(107, 277);
-            this.BtnModificar.Name = "BtnModificar";
-            this.BtnModificar.Size = new System.Drawing.Size(150, 40);
-            this.BtnModificar.TabIndex = 31;
-            this.BtnModificar.Text = "Modificar";
-            this.BtnModificar.UseVisualStyleBackColor = true;
-            // 
             // BtnConsultas
             // 
             this.BtnConsultas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnConsultas.Location = new System.Drawing.Point(107, 214);
+            this.BtnConsultas.Location = new System.Drawing.Point(107, 174);
             this.BtnConsultas.Name = "BtnConsultas";
             this.BtnConsultas.Size = new System.Drawing.Size(150, 40);
             this.BtnConsultas.TabIndex = 30;
             this.BtnConsultas.Text = "Consulta";
             this.BtnConsultas.UseVisualStyleBackColor = true;
-            // 
-            // BtnCargaSt
-            // 
-            this.BtnCargaSt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCargaSt.Location = new System.Drawing.Point(107, 151);
-            this.BtnCargaSt.Name = "BtnCargaSt";
-            this.BtnCargaSt.Size = new System.Drawing.Size(150, 40);
-            this.BtnCargaSt.TabIndex = 29;
-            this.BtnCargaSt.Text = "Carga St";
-            this.BtnCargaSt.UseVisualStyleBackColor = true;
+            this.BtnConsultas.Click += new System.EventHandler(this.BtnConsultas_Click);
             // 
             // BtnCargaIng
             // 
@@ -94,9 +73,7 @@ namespace POS_Fiscal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 497);
             this.Controls.Add(this.BtnAtras);
-            this.Controls.Add(this.BtnModificar);
             this.Controls.Add(this.BtnConsultas);
-            this.Controls.Add(this.BtnCargaSt);
             this.Controls.Add(this.BtnCargaIng);
             this.Name = "IngreInterno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -108,9 +85,7 @@ namespace POS_Fiscal
         #endregion
 
         private System.Windows.Forms.Button BtnAtras;
-        private System.Windows.Forms.Button BtnModificar;
         private System.Windows.Forms.Button BtnConsultas;
-        private System.Windows.Forms.Button BtnCargaSt;
         private System.Windows.Forms.Button BtnCargaIng;
     }
 }

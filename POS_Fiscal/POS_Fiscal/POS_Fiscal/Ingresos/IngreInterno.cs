@@ -30,5 +30,12 @@ namespace POS_Fiscal
             carg.Show();
             this.Hide();
         }
+
+        private void BtnConsultas_Click(object sender, EventArgs e)
+        {
+            ConsultaFactProv fac = new ConsultaFactProv();
+            fac.Show();
+            this.Hide();
+        }
     }
 }
