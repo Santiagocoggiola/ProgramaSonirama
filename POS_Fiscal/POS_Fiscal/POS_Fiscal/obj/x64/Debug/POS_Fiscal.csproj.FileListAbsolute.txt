@@ -1,8 +1,0 @@
-H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\x64\Debug\Interop.EpsonFPHostControlX.dll
-H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\x64\Debug\POS_Fiscal.csproj.AssemblyReference.cache
-H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\x64\Debug\POS_Fiscal.FacturaA.resources
-H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\x64\Debug\POS_Fiscal.FacturaB.resources
-H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\x64\Debug\POS_Fiscal.MenuPrincipal.resources
-H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\x64\Debug\POS_Fiscal.Properties.Resources.resources
-H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\x64\Debug\POS_Fiscal.csproj.GenerateResource.cache
-H:\Curso\Curso Negocio\POS_Fiscal\POS_Fiscal\POS_Fiscal\obj\x64\Debug\POS_Fiscal.csproj.CoreCompileInputs.cache
