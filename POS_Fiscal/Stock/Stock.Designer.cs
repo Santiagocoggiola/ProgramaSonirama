@@ -37,9 +37,9 @@ namespace POS_Fiscal
             // BtnVerArticulos
             // 
             this.BtnVerArticulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnVerArticulos.Location = new System.Drawing.Point(182, 221);
+            this.BtnVerArticulos.Location = new System.Drawing.Point(597, 271);
             this.BtnVerArticulos.Name = "BtnVerArticulos";
-            this.BtnVerArticulos.Size = new System.Drawing.Size(150, 76);
+            this.BtnVerArticulos.Size = new System.Drawing.Size(318, 169);
             this.BtnVerArticulos.TabIndex = 5;
             this.BtnVerArticulos.Text = "Ver Articulos";
             this.BtnVerArticulos.UseVisualStyleBackColor = true;
@@ -48,9 +48,9 @@ namespace POS_Fiscal
             // BtnModificaciones
             // 
             this.BtnModificaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnModificaciones.Location = new System.Drawing.Point(182, 98);
+            this.BtnModificaciones.Location = new System.Drawing.Point(597, 12);
             this.BtnModificaciones.Name = "BtnModificaciones";
-            this.BtnModificaciones.Size = new System.Drawing.Size(150, 76);
+            this.BtnModificaciones.Size = new System.Drawing.Size(318, 169);
             this.BtnModificaciones.TabIndex = 4;
             this.BtnModificaciones.Text = "Modificaciones";
             this.BtnModificaciones.UseVisualStyleBackColor = true;
@@ -59,9 +59,9 @@ namespace POS_Fiscal
             // BtnAtras
             // 
             this.BtnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAtras.Location = new System.Drawing.Point(182, 344);
+            this.BtnAtras.Location = new System.Drawing.Point(597, 530);
             this.BtnAtras.Name = "BtnAtras";
-            this.BtnAtras.Size = new System.Drawing.Size(150, 76);
+            this.BtnAtras.Size = new System.Drawing.Size(318, 169);
             this.BtnAtras.TabIndex = 6;
             this.BtnAtras.Text = "Atras";
             this.BtnAtras.UseVisualStyleBackColor = true;
@@ -71,7 +71,7 @@ namespace POS_Fiscal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(550, 540);
+            this.ClientSize = new System.Drawing.Size(1264, 961);
             this.Controls.Add(this.BtnAtras);
             this.Controls.Add(this.BtnVerArticulos);
             this.Controls.Add(this.BtnModificaciones);

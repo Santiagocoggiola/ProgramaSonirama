@@ -41,9 +41,9 @@ namespace POS_Fiscal
             // BtnAtras
             // 
             this.BtnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAtras.Location = new System.Drawing.Point(160, 439);
+            this.BtnAtras.Location = new System.Drawing.Point(538, 846);
             this.BtnAtras.Name = "BtnAtras";
-            this.BtnAtras.Size = new System.Drawing.Size(150, 40);
+            this.BtnAtras.Size = new System.Drawing.Size(354, 80);
             this.BtnAtras.TabIndex = 21;
             this.BtnAtras.Text = "Atras";
             this.BtnAtras.UseVisualStyleBackColor = true;
@@ -52,9 +52,9 @@ namespace POS_Fiscal
             // BtnCambioInt
             // 
             this.BtnCambioInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCambioInt.Location = new System.Drawing.Point(160, 376);
+            this.BtnCambioInt.Location = new System.Drawing.Point(538, 707);
             this.BtnCambioInt.Name = "BtnCambioInt";
-            this.BtnCambioInt.Size = new System.Drawing.Size(150, 40);
+            this.BtnCambioInt.Size = new System.Drawing.Size(354, 80);
             this.BtnCambioInt.TabIndex = 20;
             this.BtnCambioInt.Text = "Cambio Interes";
             this.BtnCambioInt.UseVisualStyleBackColor = true;
@@ -62,9 +62,9 @@ namespace POS_Fiscal
             // BtnDatosActu
             // 
             this.BtnDatosActu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDatosActu.Location = new System.Drawing.Point(160, 313);
+            this.BtnDatosActu.Location = new System.Drawing.Point(538, 568);
             this.BtnDatosActu.Name = "BtnDatosActu";
-            this.BtnDatosActu.Size = new System.Drawing.Size(150, 40);
+            this.BtnDatosActu.Size = new System.Drawing.Size(354, 80);
             this.BtnDatosActu.TabIndex = 19;
             this.BtnDatosActu.Text = "Dato Actualiz";
             this.BtnDatosActu.UseVisualStyleBackColor = true;
@@ -72,9 +72,9 @@ namespace POS_Fiscal
             // BtnCambioDolar
             // 
             this.BtnCambioDolar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCambioDolar.Location = new System.Drawing.Point(160, 250);
+            this.BtnCambioDolar.Location = new System.Drawing.Point(538, 429);
             this.BtnCambioDolar.Name = "BtnCambioDolar";
-            this.BtnCambioDolar.Size = new System.Drawing.Size(150, 40);
+            this.BtnCambioDolar.Size = new System.Drawing.Size(354, 80);
             this.BtnCambioDolar.TabIndex = 18;
             this.BtnCambioDolar.Text = "Cambio A Dolar";
             this.BtnCambioDolar.UseVisualStyleBackColor = true;
@@ -82,9 +82,9 @@ namespace POS_Fiscal
             // BtnPrecioPMargen
             // 
             this.BtnPrecioPMargen.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPrecioPMargen.Location = new System.Drawing.Point(160, 187);
+            this.BtnPrecioPMargen.Location = new System.Drawing.Point(538, 290);
             this.BtnPrecioPMargen.Name = "BtnPrecioPMargen";
-            this.BtnPrecioPMargen.Size = new System.Drawing.Size(150, 40);
+            this.BtnPrecioPMargen.Size = new System.Drawing.Size(354, 80);
             this.BtnPrecioPMargen.TabIndex = 17;
             this.BtnPrecioPMargen.Text = "Precio P/Marg";
             this.BtnPrecioPMargen.UseVisualStyleBackColor = true;
@@ -93,9 +93,9 @@ namespace POS_Fiscal
             // BtnCantidades
             // 
             this.BtnCantidades.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCantidades.Location = new System.Drawing.Point(160, 124);
+            this.BtnCantidades.Location = new System.Drawing.Point(538, 151);
             this.BtnCantidades.Name = "BtnCantidades";
-            this.BtnCantidades.Size = new System.Drawing.Size(150, 40);
+            this.BtnCantidades.Size = new System.Drawing.Size(354, 80);
             this.BtnCantidades.TabIndex = 16;
             this.BtnCantidades.Text = "Cantidades";
             this.BtnCantidades.UseVisualStyleBackColor = true;
@@ -104,9 +104,9 @@ namespace POS_Fiscal
             // BtnPrecioPUn
             // 
             this.BtnPrecioPUn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPrecioPUn.Location = new System.Drawing.Point(160, 61);
+            this.BtnPrecioPUn.Location = new System.Drawing.Point(538, 12);
             this.BtnPrecioPUn.Name = "BtnPrecioPUn";
-            this.BtnPrecioPUn.Size = new System.Drawing.Size(150, 40);
+            this.BtnPrecioPUn.Size = new System.Drawing.Size(354, 80);
             this.BtnPrecioPUn.TabIndex = 15;
             this.BtnPrecioPUn.Text = "Precio P/Un";
             this.BtnPrecioPUn.UseVisualStyleBackColor = true;
@@ -116,7 +116,7 @@ namespace POS_Fiscal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(498, 537);
+            this.ClientSize = new System.Drawing.Size(1264, 961);
             this.Controls.Add(this.BtnAtras);
             this.Controls.Add(this.BtnCambioInt);
             this.Controls.Add(this.BtnDatosActu);

@@ -37,9 +37,9 @@ namespace POS_Fiscal
             // BtnAtras
             // 
             this.BtnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAtras.Location = new System.Drawing.Point(129, 320);
+            this.BtnAtras.Location = new System.Drawing.Point(531, 622);
             this.BtnAtras.Name = "BtnAtras";
-            this.BtnAtras.Size = new System.Drawing.Size(150, 70);
+            this.BtnAtras.Size = new System.Drawing.Size(293, 181);
             this.BtnAtras.TabIndex = 30;
             this.BtnAtras.Text = "Atras";
             this.BtnAtras.UseVisualStyleBackColor = true;
@@ -48,9 +48,9 @@ namespace POS_Fiscal
             // BtnPedidos
             // 
             this.BtnPedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnPedidos.Location = new System.Drawing.Point(129, 214);
+            this.BtnPedidos.Location = new System.Drawing.Point(531, 393);
             this.BtnPedidos.Name = "BtnPedidos";
-            this.BtnPedidos.Size = new System.Drawing.Size(150, 70);
+            this.BtnPedidos.Size = new System.Drawing.Size(293, 181);
             this.BtnPedidos.TabIndex = 29;
             this.BtnPedidos.Text = "Pedidos";
             this.BtnPedidos.UseVisualStyleBackColor = true;
@@ -58,9 +58,9 @@ namespace POS_Fiscal
             // BtnIngresos
             // 
             this.BtnIngresos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnIngresos.Location = new System.Drawing.Point(129, 108);
+            this.BtnIngresos.Location = new System.Drawing.Point(531, 164);
             this.BtnIngresos.Name = "BtnIngresos";
-            this.BtnIngresos.Size = new System.Drawing.Size(150, 70);
+            this.BtnIngresos.Size = new System.Drawing.Size(293, 181);
             this.BtnIngresos.TabIndex = 28;
             this.BtnIngresos.Text = "Ingresos";
             this.BtnIngresos.UseVisualStyleBackColor = true;
@@ -70,7 +70,7 @@ namespace POS_Fiscal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 509);
+            this.ClientSize = new System.Drawing.Size(1264, 961);
             this.Controls.Add(this.BtnAtras);
             this.Controls.Add(this.BtnPedidos);
             this.Controls.Add(this.BtnIngresos);

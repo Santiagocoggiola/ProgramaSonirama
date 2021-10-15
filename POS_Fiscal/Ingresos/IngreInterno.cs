@@ -37,5 +37,12 @@ namespace POS_Fiscal
             fac.Show();
             this.Hide();
         }
+
+        private void BtnIvaCompras_Click(object sender, EventArgs e)
+        {
+            IvaCompras iva = new IvaCompras();
+            iva.Show();
+            this.Hide();
+        }
     }
 }

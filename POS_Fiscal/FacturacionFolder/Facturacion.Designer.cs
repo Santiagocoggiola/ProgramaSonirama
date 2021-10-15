@@ -38,13 +38,12 @@ namespace POS_Fiscal
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.BtnVentas = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // botonFacturaB
             // 
             this.botonFacturaB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonFacturaB.Location = new System.Drawing.Point(234, 59);
+            this.botonFacturaB.Location = new System.Drawing.Point(469, 30);
             this.botonFacturaB.Name = "botonFacturaB";
             this.botonFacturaB.Size = new System.Drawing.Size(177, 76);
             this.botonFacturaB.TabIndex = 0;
@@ -55,7 +54,7 @@ namespace POS_Fiscal
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(234, 154);
+            this.button2.Location = new System.Drawing.Point(469, 121);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(177, 76);
             this.button2.TabIndex = 1;
@@ -66,7 +65,7 @@ namespace POS_Fiscal
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(234, 249);
+            this.button3.Location = new System.Drawing.Point(469, 212);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(177, 76);
             this.button3.TabIndex = 2;
@@ -77,7 +76,7 @@ namespace POS_Fiscal
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(234, 344);
+            this.button4.Location = new System.Drawing.Point(469, 303);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(177, 76);
             this.button4.TabIndex = 3;
@@ -88,7 +87,7 @@ namespace POS_Fiscal
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(234, 534);
+            this.button1.Location = new System.Drawing.Point(469, 485);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(177, 76);
             this.button1.TabIndex = 5;
@@ -99,7 +98,7 @@ namespace POS_Fiscal
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(234, 439);
+            this.button5.Location = new System.Drawing.Point(469, 394);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(177, 76);
             this.button5.TabIndex = 4;
@@ -110,7 +109,7 @@ namespace POS_Fiscal
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(234, 914);
+            this.button6.Location = new System.Drawing.Point(469, 759);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(177, 76);
             this.button6.TabIndex = 6;
@@ -121,7 +120,7 @@ namespace POS_Fiscal
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(234, 629);
+            this.button7.Location = new System.Drawing.Point(469, 576);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(177, 76);
             this.button7.TabIndex = 7;
@@ -132,7 +131,7 @@ namespace POS_Fiscal
             // BtnVentas
             // 
             this.BtnVentas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnVentas.Location = new System.Drawing.Point(234, 724);
+            this.BtnVentas.Location = new System.Drawing.Point(469, 667);
             this.BtnVentas.Name = "BtnVentas";
             this.BtnVentas.Size = new System.Drawing.Size(177, 76);
             this.BtnVentas.TabIndex = 8;
@@ -140,23 +139,11 @@ namespace POS_Fiscal
             this.BtnVentas.UseVisualStyleBackColor = true;
             this.BtnVentas.Click += new System.EventHandler(this.BtnVentas_Click);
             // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(234, 819);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(177, 76);
-            this.button8.TabIndex = 9;
-            this.button8.Text = "Destrabar";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
             // Facturacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 1005);
-            this.Controls.Add(this.button8);
+            this.ClientSize = new System.Drawing.Size(1264, 961);
             this.Controls.Add(this.BtnVentas);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -169,7 +156,6 @@ namespace POS_Fiscal
             this.Name = "Facturacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Facturacion";
-            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.ResumeLayout(false);
 
         }
@@ -185,6 +171,5 @@ namespace POS_Fiscal
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button BtnVentas;
-        private System.Windows.Forms.Button button8;
     }
 }

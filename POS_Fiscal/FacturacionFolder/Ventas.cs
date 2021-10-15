@@ -26,24 +26,15 @@ namespace POS_Fiscal
         }
         private void BtnMensual_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Desea Imprimir Las Ventas Mensuales?", Text, MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-
-                Helpers.sumarMensual("stock.ventasadiarias", "stock.ventasamensual", TxtMes.Text);
-                Helpers.sumarMensual("stock.ventasbdiarias", "stock.ventasbmensual", TxtMes.Text);
-                Helpers.imprimirMes(printDocument1);
-            }
+            
         }
 
         private void BtnDiario_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Desea Imprimir Las Ventas Diarias?", Text, MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-
-                Helpers.sumarPorComprobante("stock.ventasb", "stock.ventasbdiarias", TxtFecha.Text);
-                Helpers.sumarPorComprobante("stock.ventasa", "stock.ventasadiarias", TxtFecha.Text);
-                Helpers.imprimirComprobante(printDocument1);
-            }
+            
+            this.Hide();
+            VentasDiarias di = new VentasDiarias();
+            di.Show();
         }
     }
 }

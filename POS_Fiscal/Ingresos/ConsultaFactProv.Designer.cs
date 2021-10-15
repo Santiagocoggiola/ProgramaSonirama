@@ -52,9 +52,10 @@ namespace POS_Fiscal
             // 
             // BtnAtras
             // 
-            this.BtnAtras.Location = new System.Drawing.Point(12, 688);
+            this.BtnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.BtnAtras.Location = new System.Drawing.Point(12, 864);
             this.BtnAtras.Name = "BtnAtras";
-            this.BtnAtras.Size = new System.Drawing.Size(92, 44);
+            this.BtnAtras.Size = new System.Drawing.Size(185, 85);
             this.BtnAtras.TabIndex = 1;
             this.BtnAtras.Text = "Atras";
             this.BtnAtras.UseVisualStyleBackColor = true;
@@ -77,7 +78,7 @@ namespace POS_Fiscal
             this.TotalParcial});
             this.dataGridView1.Location = new System.Drawing.Point(14, 96);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1244, 586);
+            this.dataGridView1.Size = new System.Drawing.Size(1244, 762);
             this.dataGridView1.TabIndex = 68;
             // 
             // Codigo
@@ -193,7 +194,7 @@ namespace POS_Fiscal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1270, 744);
+            this.ClientSize = new System.Drawing.Size(1264, 961);
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtProveedor);

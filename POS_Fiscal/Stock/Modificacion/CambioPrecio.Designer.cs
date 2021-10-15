@@ -63,54 +63,56 @@ namespace POS_Fiscal
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label1.Location = new System.Drawing.Point(27, 50);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label1.Location = new System.Drawing.Point(22, 94);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(286, 17);
+            this.label1.Size = new System.Drawing.Size(498, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "CAMBIO PRECIOS POR CODIGO P/UNIDAD";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label2.Location = new System.Drawing.Point(410, 50);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label2.Location = new System.Drawing.Point(536, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 17);
+            this.label2.Size = new System.Drawing.Size(115, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "CODIGO:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label3.Location = new System.Drawing.Point(563, 50);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.label3.Location = new System.Drawing.Point(793, 93);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 17);
+            this.label3.Size = new System.Drawing.Size(101, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "DIGITO:";
             // 
             // TxtCodigo
             // 
-            this.TxtCodigo.Location = new System.Drawing.Point(483, 50);
+            this.TxtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.TxtCodigo.Location = new System.Drawing.Point(657, 94);
             this.TxtCodigo.Name = "TxtCodigo";
-            this.TxtCodigo.Size = new System.Drawing.Size(62, 20);
+            this.TxtCodigo.Size = new System.Drawing.Size(110, 35);
             this.TxtCodigo.TabIndex = 3;
             // 
             // TxtDigito
             // 
-            this.TxtDigito.Location = new System.Drawing.Point(628, 50);
+            this.TxtDigito.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.TxtDigito.Location = new System.Drawing.Point(900, 94);
             this.TxtDigito.Name = "TxtDigito";
-            this.TxtDigito.Size = new System.Drawing.Size(36, 20);
+            this.TxtDigito.Size = new System.Drawing.Size(36, 35);
             this.TxtDigito.TabIndex = 4;
             // 
             // Lblpro
             // 
             this.Lblpro.AutoSize = true;
-            this.Lblpro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.Lblpro.Location = new System.Drawing.Point(27, 122);
+            this.Lblpro.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.Lblpro.Location = new System.Drawing.Point(7, 314);
             this.Lblpro.Name = "Lblpro";
-            this.Lblpro.Size = new System.Drawing.Size(100, 17);
+            this.Lblpro.Size = new System.Drawing.Size(171, 29);
             this.Lblpro.TabIndex = 5;
             this.Lblpro.Text = "PROVEEDOR:";
             this.Lblpro.Visible = false;
@@ -118,10 +120,10 @@ namespace POS_Fiscal
             // Lblrub
             // 
             this.Lblrub.AutoSize = true;
-            this.Lblrub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.Lblrub.Location = new System.Drawing.Point(27, 185);
+            this.Lblrub.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.Lblrub.Location = new System.Drawing.Point(7, 412);
             this.Lblrub.Name = "Lblrub";
-            this.Lblrub.Size = new System.Drawing.Size(62, 17);
+            this.Lblrub.Size = new System.Drawing.Size(105, 29);
             this.Lblrub.TabIndex = 6;
             this.Lblrub.Text = "RUBRO:";
             this.Lblrub.Visible = false;
@@ -129,10 +131,10 @@ namespace POS_Fiscal
             // Lblart
             // 
             this.Lblart.AutoSize = true;
-            this.Lblart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.Lblart.Location = new System.Drawing.Point(27, 237);
+            this.Lblart.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.Lblart.Location = new System.Drawing.Point(7, 498);
             this.Lblart.Name = "Lblart";
-            this.Lblart.Size = new System.Drawing.Size(81, 17);
+            this.Lblart.Size = new System.Drawing.Size(139, 29);
             this.Lblart.TabIndex = 7;
             this.Lblart.Text = "ARTICULO:";
             this.Lblart.Visible = false;
@@ -140,10 +142,10 @@ namespace POS_Fiscal
             // LblTallAnt
             // 
             this.LblTallAnt.AutoSize = true;
-            this.LblTallAnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.LblTallAnt.Location = new System.Drawing.Point(27, 313);
+            this.LblTallAnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.LblTallAnt.Location = new System.Drawing.Point(7, 593);
             this.LblTallAnt.Name = "LblTallAnt";
-            this.LblTallAnt.Size = new System.Drawing.Size(187, 17);
+            this.LblTallAnt.Size = new System.Drawing.Size(321, 29);
             this.LblTallAnt.TabIndex = 8;
             this.LblTallAnt.Text = "PRECIO TALLER ANTIGUO:";
             this.LblTallAnt.Visible = false;
@@ -151,10 +153,10 @@ namespace POS_Fiscal
             // LblPubAnt
             // 
             this.LblPubAnt.AutoSize = true;
-            this.LblPubAnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.LblPubAnt.Location = new System.Drawing.Point(27, 383);
+            this.LblPubAnt.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.LblPubAnt.Location = new System.Drawing.Point(7, 703);
             this.LblPubAnt.Name = "LblPubAnt";
-            this.LblPubAnt.Size = new System.Drawing.Size(193, 17);
+            this.LblPubAnt.Size = new System.Drawing.Size(335, 29);
             this.LblPubAnt.TabIndex = 9;
             this.LblPubAnt.Text = "PRECIO PUBLICO ANTIGUO:";
             this.LblPubAnt.Visible = false;
@@ -162,10 +164,10 @@ namespace POS_Fiscal
             // LblPrecioPubNuevo
             // 
             this.LblPrecioPubNuevo.AutoSize = true;
-            this.LblPrecioPubNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.LblPrecioPubNuevo.Location = new System.Drawing.Point(410, 383);
+            this.LblPrecioPubNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.LblPrecioPubNuevo.Location = new System.Drawing.Point(478, 703);
             this.LblPrecioPubNuevo.Name = "LblPrecioPubNuevo";
-            this.LblPrecioPubNuevo.Size = new System.Drawing.Size(179, 17);
+            this.LblPrecioPubNuevo.Size = new System.Drawing.Size(311, 29);
             this.LblPrecioPubNuevo.TabIndex = 11;
             this.LblPrecioPubNuevo.Text = "PRECIO PUBLICO NUEVO:";
             this.LblPrecioPubNuevo.Visible = false;
@@ -173,10 +175,10 @@ namespace POS_Fiscal
             // LblPrecioTaNuevo
             // 
             this.LblPrecioTaNuevo.AutoSize = true;
-            this.LblPrecioTaNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.LblPrecioTaNuevo.Location = new System.Drawing.Point(410, 313);
+            this.LblPrecioTaNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.LblPrecioTaNuevo.Location = new System.Drawing.Point(478, 593);
             this.LblPrecioTaNuevo.Name = "LblPrecioTaNuevo";
-            this.LblPrecioTaNuevo.Size = new System.Drawing.Size(173, 17);
+            this.LblPrecioTaNuevo.Size = new System.Drawing.Size(297, 29);
             this.LblPrecioTaNuevo.TabIndex = 10;
             this.LblPrecioTaNuevo.Text = "PRECIO TALLER NUEVO:";
             this.LblPrecioTaNuevo.Visible = false;
@@ -184,69 +186,71 @@ namespace POS_Fiscal
             // LblProveedor
             // 
             this.LblProveedor.AutoSize = true;
-            this.LblProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
-            this.LblProveedor.Location = new System.Drawing.Point(159, 122);
+            this.LblProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.LblProveedor.Location = new System.Drawing.Point(184, 314);
             this.LblProveedor.Name = "LblProveedor";
-            this.LblProveedor.Size = new System.Drawing.Size(0, 17);
+            this.LblProveedor.Size = new System.Drawing.Size(0, 29);
             this.LblProveedor.TabIndex = 12;
             // 
             // LblRubro
             // 
             this.LblRubro.AutoSize = true;
-            this.LblRubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
-            this.LblRubro.Location = new System.Drawing.Point(127, 185);
+            this.LblRubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.LblRubro.Location = new System.Drawing.Point(118, 412);
             this.LblRubro.Name = "LblRubro";
-            this.LblRubro.Size = new System.Drawing.Size(0, 17);
+            this.LblRubro.Size = new System.Drawing.Size(0, 29);
             this.LblRubro.TabIndex = 13;
             // 
             // LblArticulo
             // 
             this.LblArticulo.AutoSize = true;
-            this.LblArticulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
-            this.LblArticulo.Location = new System.Drawing.Point(127, 237);
+            this.LblArticulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.LblArticulo.Location = new System.Drawing.Point(152, 498);
             this.LblArticulo.Name = "LblArticulo";
-            this.LblArticulo.Size = new System.Drawing.Size(0, 17);
+            this.LblArticulo.Size = new System.Drawing.Size(0, 29);
             this.LblArticulo.TabIndex = 14;
             // 
             // LblTaller
             // 
             this.LblTaller.AutoSize = true;
-            this.LblTaller.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
-            this.LblTaller.Location = new System.Drawing.Point(217, 313);
+            this.LblTaller.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.LblTaller.Location = new System.Drawing.Point(339, 593);
             this.LblTaller.Name = "LblTaller";
-            this.LblTaller.Size = new System.Drawing.Size(0, 17);
+            this.LblTaller.Size = new System.Drawing.Size(0, 29);
             this.LblTaller.TabIndex = 15;
             // 
             // LblPublico
             // 
             this.LblPublico.AutoSize = true;
-            this.LblPublico.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
-            this.LblPublico.Location = new System.Drawing.Point(226, 383);
+            this.LblPublico.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold);
+            this.LblPublico.Location = new System.Drawing.Point(348, 703);
             this.LblPublico.Name = "LblPublico";
-            this.LblPublico.Size = new System.Drawing.Size(0, 17);
+            this.LblPublico.Size = new System.Drawing.Size(0, 29);
             this.LblPublico.TabIndex = 16;
             // 
             // TxtTaller
             // 
-            this.TxtTaller.Location = new System.Drawing.Point(602, 310);
+            this.TxtTaller.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.TxtTaller.Location = new System.Drawing.Point(821, 590);
             this.TxtTaller.Name = "TxtTaller";
-            this.TxtTaller.Size = new System.Drawing.Size(89, 20);
+            this.TxtTaller.Size = new System.Drawing.Size(127, 35);
             this.TxtTaller.TabIndex = 17;
             this.TxtTaller.Visible = false;
             // 
             // TxtPublico
             // 
-            this.TxtPublico.Location = new System.Drawing.Point(602, 380);
+            this.TxtPublico.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.TxtPublico.Location = new System.Drawing.Point(821, 697);
             this.TxtPublico.Name = "TxtPublico";
-            this.TxtPublico.Size = new System.Drawing.Size(89, 20);
+            this.TxtPublico.Size = new System.Drawing.Size(127, 35);
             this.TxtPublico.TabIndex = 18;
             this.TxtPublico.Visible = false;
             // 
             // BtnBuscar
             // 
-            this.BtnBuscar.Location = new System.Drawing.Point(684, 50);
+            this.BtnBuscar.Location = new System.Drawing.Point(1050, 70);
             this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(75, 20);
+            this.BtnBuscar.Size = new System.Drawing.Size(202, 84);
             this.BtnBuscar.TabIndex = 19;
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.UseVisualStyleBackColor = true;
@@ -254,9 +258,9 @@ namespace POS_Fiscal
             // 
             // BtnCambiar
             // 
-            this.BtnCambiar.Location = new System.Drawing.Point(713, 342);
+            this.BtnCambiar.Location = new System.Drawing.Point(1039, 636);
             this.BtnCambiar.Name = "BtnCambiar";
-            this.BtnCambiar.Size = new System.Drawing.Size(75, 20);
+            this.BtnCambiar.Size = new System.Drawing.Size(180, 58);
             this.BtnCambiar.TabIndex = 20;
             this.BtnCambiar.Text = "Cambiar";
             this.BtnCambiar.UseVisualStyleBackColor = true;
@@ -265,9 +269,10 @@ namespace POS_Fiscal
             // 
             // BtnAtras
             // 
-            this.BtnAtras.Location = new System.Drawing.Point(12, 418);
+            this.BtnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.BtnAtras.Location = new System.Drawing.Point(12, 831);
             this.BtnAtras.Name = "BtnAtras";
-            this.BtnAtras.Size = new System.Drawing.Size(75, 20);
+            this.BtnAtras.Size = new System.Drawing.Size(229, 118);
             this.BtnAtras.TabIndex = 21;
             this.BtnAtras.Text = "Atras";
             this.BtnAtras.UseVisualStyleBackColor = true;
@@ -276,33 +281,33 @@ namespace POS_Fiscal
             // label6
             // 
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Location = new System.Drawing.Point(-4, 254);
+            this.label6.Location = new System.Drawing.Point(-4, 527);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(809, 53);
+            this.label6.Size = new System.Drawing.Size(1285, 53);
             this.label6.TabIndex = 41;
             // 
             // label4
             // 
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Location = new System.Drawing.Point(-4, 202);
+            this.label4.Location = new System.Drawing.Point(-4, 441);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(809, 35);
+            this.label4.Size = new System.Drawing.Size(1285, 57);
             this.label4.TabIndex = 42;
             // 
             // label5
             // 
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Location = new System.Drawing.Point(-4, 139);
+            this.label5.Location = new System.Drawing.Point(-4, 343);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(809, 46);
+            this.label5.Size = new System.Drawing.Size(1275, 69);
             this.label5.TabIndex = 43;
             // 
             // label7
             // 
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Location = new System.Drawing.Point(-4, 73);
+            this.label7.Location = new System.Drawing.Point(-4, 180);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(809, 46);
+            this.label7.Size = new System.Drawing.Size(1319, 120);
             this.label7.TabIndex = 44;
             // 
             // label8
@@ -316,25 +321,24 @@ namespace POS_Fiscal
             // label9
             // 
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label9.Location = new System.Drawing.Point(-4, 333);
+            this.label9.Location = new System.Drawing.Point(-15, 635);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(711, 35);
+            this.label9.Size = new System.Drawing.Size(1330, 59);
             this.label9.TabIndex = 46;
             // 
             // label10
             // 
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label10.Location = new System.Drawing.Point(-4, 403);
+            this.label10.Location = new System.Drawing.Point(-4, 753);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(808, 47);
+            this.label10.Size = new System.Drawing.Size(1285, 75);
             this.label10.TabIndex = 47;
             // 
             // CambioPrecio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label9);
+            this.ClientSize = new System.Drawing.Size(1264, 961);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
@@ -363,6 +367,7 @@ namespace POS_Fiscal
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Name = "CambioPrecio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CambioPrecio";

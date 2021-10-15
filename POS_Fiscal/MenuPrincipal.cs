@@ -44,5 +44,10 @@ namespace POS_Fiscal
             this.Hide();
             ing.Show();
         }
+
+        private void TxtSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

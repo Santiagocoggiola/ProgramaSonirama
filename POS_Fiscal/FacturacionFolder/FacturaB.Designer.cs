@@ -60,7 +60,7 @@ namespace POS_Fiscal
             // botonSalir
             // 
             this.botonSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.botonSalir.Location = new System.Drawing.Point(845, 540);
+            this.botonSalir.Location = new System.Drawing.Point(12, 891);
             this.botonSalir.Name = "botonSalir";
             this.botonSalir.Size = new System.Drawing.Size(129, 54);
             this.botonSalir.TabIndex = 0;
@@ -72,7 +72,7 @@ namespace POS_Fiscal
             // 
             this.botonImprimir.Enabled = false;
             this.botonImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.botonImprimir.Location = new System.Drawing.Point(0, 536);
+            this.botonImprimir.Location = new System.Drawing.Point(748, 891);
             this.botonImprimir.Name = "botonImprimir";
             this.botonImprimir.Size = new System.Drawing.Size(129, 54);
             this.botonImprimir.TabIndex = 1;
@@ -114,7 +114,7 @@ namespace POS_Fiscal
             // 
             this.labelTotal.AutoSize = true;
             this.labelTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.labelTotal.Location = new System.Drawing.Point(538, 377);
+            this.labelTotal.Location = new System.Drawing.Point(494, 679);
             this.labelTotal.Name = "labelTotal";
             this.labelTotal.Size = new System.Drawing.Size(83, 31);
             this.labelTotal.TabIndex = 5;
@@ -134,7 +134,7 @@ namespace POS_Fiscal
             // 
             this.labelTotalNum.AutoSize = true;
             this.labelTotalNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.labelTotalNum.Location = new System.Drawing.Point(637, 383);
+            this.labelTotalNum.Location = new System.Drawing.Point(593, 685);
             this.labelTotalNum.Name = "labelTotalNum";
             this.labelTotalNum.Size = new System.Drawing.Size(60, 25);
             this.labelTotalNum.TabIndex = 11;
@@ -143,7 +143,7 @@ namespace POS_Fiscal
             // botonAñadir
             // 
             this.botonAñadir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.botonAñadir.Location = new System.Drawing.Point(855, 45);
+            this.botonAñadir.Location = new System.Drawing.Point(1131, 32);
             this.botonAñadir.Name = "botonAñadir";
             this.botonAñadir.Size = new System.Drawing.Size(119, 31);
             this.botonAñadir.TabIndex = 12;
@@ -155,13 +155,13 @@ namespace POS_Fiscal
             // 
             this.panel1.Location = new System.Drawing.Point(0, 32);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(849, 342);
+            this.panel1.Size = new System.Drawing.Size(1103, 626);
             this.panel1.TabIndex = 14;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.button1.Location = new System.Drawing.Point(855, 156);
+            this.button1.Location = new System.Drawing.Point(1131, 143);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(119, 31);
             this.button1.TabIndex = 15;
@@ -182,7 +182,7 @@ namespace POS_Fiscal
             // 
             // button_reconectar
             // 
-            this.button_reconectar.Location = new System.Drawing.Point(383, 571);
+            this.button_reconectar.Location = new System.Drawing.Point(1131, 926);
             this.button_reconectar.Name = "button_reconectar";
             this.button_reconectar.Size = new System.Drawing.Size(130, 23);
             this.button_reconectar.TabIndex = 42;
@@ -193,16 +193,16 @@ namespace POS_Fiscal
             // progressBar1
             // 
             this.progressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.progressBar1.Location = new System.Drawing.Point(0, 596);
+            this.progressBar1.Location = new System.Drawing.Point(0, 951);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(986, 10);
+            this.progressBar1.Size = new System.Drawing.Size(1264, 10);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.progressBar1.TabIndex = 43;
             // 
             // botonCliente
             // 
             this.botonCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.botonCliente.Location = new System.Drawing.Point(265, 391);
+            this.botonCliente.Location = new System.Drawing.Point(1013, 746);
             this.botonCliente.Name = "botonCliente";
             this.botonCliente.Size = new System.Drawing.Size(161, 31);
             this.botonCliente.TabIndex = 54;
@@ -213,7 +213,7 @@ namespace POS_Fiscal
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(89, 507);
+            this.txtDireccion.Location = new System.Drawing.Point(837, 862);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(337, 20);
             this.txtDireccion.TabIndex = 53;
@@ -221,7 +221,7 @@ namespace POS_Fiscal
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 510);
+            this.label5.Location = new System.Drawing.Point(760, 865);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 52;
@@ -229,7 +229,7 @@ namespace POS_Fiscal
             // 
             // txtDni
             // 
-            this.txtDni.Location = new System.Drawing.Point(89, 481);
+            this.txtDni.Location = new System.Drawing.Point(837, 836);
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(337, 20);
             this.txtDni.TabIndex = 47;
@@ -244,7 +244,7 @@ namespace POS_Fiscal
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(89, 455);
+            this.txtNombre.Location = new System.Drawing.Point(837, 810);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(337, 20);
             this.txtNombre.TabIndex = 45;
@@ -252,7 +252,7 @@ namespace POS_Fiscal
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 458);
+            this.label6.Location = new System.Drawing.Point(760, 813);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 13);
             this.label6.TabIndex = 44;
@@ -264,7 +264,7 @@ namespace POS_Fiscal
             this.comboBox1.Items.AddRange(new object[] {
             "IVA Sujeto Exento",
             "Consumidor Final"});
-            this.comboBox1.Location = new System.Drawing.Point(89, 395);
+            this.comboBox1.Location = new System.Drawing.Point(837, 750);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(147, 21);
             this.comboBox1.TabIndex = 56;
@@ -275,7 +275,7 @@ namespace POS_Fiscal
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "SIN DOCUMENTO"});
-            this.comboBox2.Location = new System.Drawing.Point(89, 428);
+            this.comboBox2.Location = new System.Drawing.Point(837, 783);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(147, 21);
             this.comboBox2.TabIndex = 57;
@@ -287,7 +287,7 @@ namespace POS_Fiscal
             this.comboBox3.Items.AddRange(new object[] {
             "Credito",
             "Efectivo"});
-            this.comboBox3.Location = new System.Drawing.Point(550, 454);
+            this.comboBox3.Location = new System.Drawing.Point(506, 756);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(147, 21);
             this.comboBox3.TabIndex = 58;
@@ -296,7 +296,7 @@ namespace POS_Fiscal
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(550, 428);
+            this.label3.Location = new System.Drawing.Point(506, 730);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 13);
             this.label3.TabIndex = 59;
@@ -304,7 +304,7 @@ namespace POS_Fiscal
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(550, 481);
+            this.panel2.Location = new System.Drawing.Point(506, 783);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 101);
             this.panel2.TabIndex = 60;
@@ -313,7 +313,7 @@ namespace POS_Fiscal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(986, 606);
+            this.ClientSize = new System.Drawing.Size(1264, 961);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox3);

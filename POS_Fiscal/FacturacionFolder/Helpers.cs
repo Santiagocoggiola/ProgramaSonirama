@@ -45,6 +45,10 @@ namespace POS_Fiscal
             public string desde;
             public string hasta;
             public float ingreso;
+            public float imsiniva;
+            public float iva;
+            public string nombre;
+            public string documento;
             public string fecha;
         }
         static string fecha = "";
@@ -52,6 +56,9 @@ namespace POS_Fiscal
         static string año = "";
         static int posAct = 0;
         static int y = 0;
+        static float totalB = 0;
+        static float totalsinivadiarioA = 0;
+        static float totalsinivaA = 0;
         static bool imprimiendoA = false;
         static bool imprimiendoB = true;
         public static void NonQuery(string Query, MySqlConnection con){
@@ -106,6 +113,8 @@ namespace POS_Fiscal
             listB = loadListMensual(listB, "stock.ventasbmensual");
             ImprimirMensualAux(sender, e, x, y + 30, listA, listB);
         }
+
+
         private static List<mensual> loadListMensual(List<mensual> list, string tabla)
         {
             mensual men = new mensual();
@@ -114,20 +123,36 @@ namespace POS_Fiscal
             string Query = "SELECT * FROM " + tabla + " WHERE FECHA LIKE " + "'%" + mesAño + "%'";
             con.Open();
             MySqlDataReader rd = Helpers.readQuery(Query, con);
-            while (rd.Read())
+            if(tabla == "stock.ventasamensual")
             {
-                men.desde = rd.GetString("DESDE");
-                men.ingreso = rd.GetFloat("INGRESOS");
-                men.fecha = rd.GetString("FECHA");
-                men.hasta = rd.GetString("HASTA");
-                list.Add(men);
+                while (rd.Read())
+                {
+                    men.ingreso = rd.GetFloat("INGRESOS");
+                    men.documento = rd.GetString("DOCUMENTO");
+                    men.nombre = rd.GetString("NOMBRE");
+                    men.iva = rd.GetFloat("IVA");
+                    men.imsiniva = rd.GetFloat("IMPORTESINIVA");
+                    men.fecha = rd.GetString("FECHA");
+                    men.hasta = rd.GetString("HASTA");
+                    list.Add(men);
+                }
             }
+            else
+            {
+                while (rd.Read())
+                {
+                    men.desde = rd.GetString("DESDE");
+                    men.ingreso = rd.GetFloat("INGRESOS");
+                    men.fecha = rd.GetString("FECHA");
+                    men.hasta = rd.GetString("HASTA");
+                    list.Add(men);
+                }
+            }
+            
             return list;
         }
         private static void ImprimirMensualAux(object sender, PrintPageEventArgs e, int x, int y, List<mensual> listA, List<mensual> listB)
         {
-            float totalA = 0;
-            float totalB = 0;
             string sttotal;
             float total = 0;
             Font font = new Font("Arial", 12, FontStyle.Bold, GraphicsUnit.Point);
@@ -136,7 +161,7 @@ namespace POS_Fiscal
             if (listB.Count > 0 && !imprimiendoA)
             {
                 font = new Font("Arial", 10, FontStyle.Bold, GraphicsUnit.Point);
-                e.Graphics.DrawString("LISTADO DE VENTAS FACTURAS TIPO B", font, Brushes.Black, new RectangleF(x, y, 150, 50));
+                e.Graphics.DrawString("LISTADO DE VENTAS FACTURAS TIPO B", font, Brushes.Black, new RectangleF(x, y, 300, 50));
                 y += 20;
                 font = new Font("Arial", 7, FontStyle.Bold, GraphicsUnit.Point);
                 y += 40;
@@ -185,6 +210,11 @@ namespace POS_Fiscal
                 //font = new Font("Arial", 12, FontStyle.Bold, GraphicsUnit.Point);
                // e.Graphics.DrawString("SUBTOTAL B: " + totalB.ToString(), font, Brushes.Black, new RectangleF(10, y + 20, 200, 50));
             }
+            if(imprimiendoB == true)
+            {
+                font = new Font("Arial", 12, FontStyle.Bold, GraphicsUnit.Point);
+                e.Graphics.DrawString("SUBTOTAL B: " + totalB.ToString(), font, Brushes.Black, new RectangleF(10, y + 20, 200, 50));
+            }
             imprimiendoA = true;
             imprimiendoB = false;
             posAct = 0;
@@ -199,14 +229,30 @@ namespace POS_Fiscal
             {
                 y += 30;
             }
-            
+
             if (listA.Count > 0 && !imprimiendoB)
             {
+                y += 10;
                 font = new Font("Arial", 10, FontStyle.Bold, GraphicsUnit.Point);
-                e.Graphics.DrawString("LISTADO DE VENTAS FACTURAS TIPO A", font, Brushes.Black, new RectangleF(x, y, 150, 50));
+                e.Graphics.DrawString("LISTADO DE VENTAS FACTURAS TIPO A", font, Brushes.Black, new RectangleF(x, y, 300, 50));
                 y += 20;
                 font = new Font("Arial", 7, FontStyle.Bold, GraphicsUnit.Point);
-                y += 40;
+                string desde = "";
+                string hasta = "";
+                string imprimir = "-----------------------------------------------------------------" +
+                        "-----------------------------------" +
+                        "-------------------------------" +
+                        "------------------------------" +
+                        "-" +
+                        "----" +
+                        "----------------------------------------------------";
+                e.Graphics.DrawString(imprimir, font, Brushes.Black, new RectangleF(0, y, 700, 20));
+                y += 25;
+                desde = listA[0].hasta.ToString();
+                string fecha = listA[0].fecha.Split('/')[0] + "/" + listA[0].fecha.Split('/')[1];
+                imprimir = "FECHA: " + fecha + "               NRO                      IMPORTE/S.IVA              IVA 21%              TOTAL" + "                   NOMBRE" + "                 CUIT";
+                e.Graphics.DrawString(imprimir, font, Brushes.Black, new RectangleF(x, y, 600, 20));
+                string fechaaux = listA[0].fecha;
                 for (int i = posAct; i < listA.Count; ++i)
                 {
                     if (y >= 1100)
@@ -218,39 +264,53 @@ namespace POS_Fiscal
                         posAct = i;
                         return;
                     }
-                    string imprimir = "";
-                    imprimir = "-----------------------------------------------------------------" +
+                   
+                    if(fechaaux != listA[i].fecha) 
+                    {
+                        imprimir = "SUBTOTAL DIARIO : " + totalsinivadiarioA + "    SUBTOTAL ACUMULADO :    " + totalsinivaA;
+                        e.Graphics.DrawString(imprimir, font, Brushes.Black, new RectangleF(x, y, 500, 20));
+                        y += 25;
+                        imprimir = "DESDE FRA.Nro    " + desde + "  HASTA FRA. Nro:        " + hasta;
+                        e.Graphics.DrawString(imprimir, font, Brushes.Black, new RectangleF(x, y, 500, 50));
+                        x = 0;
+                        y += 25;
+                        imprimir = "-----------------------------------------------------------------" +
                         "-----------------------------------" +
                         "-------------------------------" +
                         "------------------------------" +
                         "-" +
                         "----" +
                         "----------------------------------------------------";
-                    e.Graphics.DrawString(imprimir, font, Brushes.Black, new RectangleF(0, y, 700, 20));
-                    totalB = totalB + listB[i].ingreso;
+                        e.Graphics.DrawString(imprimir, font, Brushes.Black, new RectangleF(0, y, 700, 20));
+                        desde = listA[i].hasta.ToString();
+                        totalsinivaA = totalsinivaA + totalsinivadiarioA;
+                        totalsinivadiarioA = 0;
+                        y += 25;
+                        fecha = listA[i].fecha.Split('/')[0] + "/" + listA[i].fecha.Split('/')[1];
+                        imprimir = "FECHA: " + fecha + "               NRO                      IMPORTE/S.IVA              IVA 21%              TOTAL" + "                   NOMBRE" + "                 CUIT";
+                        e.Graphics.DrawString(imprimir, font, Brushes.Black, new RectangleF(x, y, 700, 20));
+                        fechaaux = listA[i].fecha;
+                    }
                     y += 25;
-                    string fecha = listB[i].fecha.Split('/')[0] + "/" + listB[i].fecha.Split('/')[1];
-                    imprimir = "FECHA: " + fecha;
-                    e.Graphics.DrawString(imprimir, font, Brushes.Black, new RectangleF(x, y, 200, 20));
+                    x += 0;
+                    totalsinivadiarioA = totalsinivadiarioA + listA[i].imsiniva;
+                    imprimir = listA[i].hasta + "                      " + "                            " + listA[i].imsiniva + "                        " + listA[i].iva + "                  " + listA[i].ingreso + "                 " + listA[i].nombre + "           " + listA[i].documento;
+                    e.Graphics.DrawString(imprimir, font, Brushes.Black, new RectangleF(x, y, 700, 20));
+                    hasta = listA[i].hasta;
                     y += 25;
-                    imprimir = "SUBTOTAL DIARIO:          " + listB[i].ingreso;
-                    e.Graphics.DrawString(imprimir, font, Brushes.Black, new RectangleF(x, y, 200, 20));
-                    x += 210;
-                    imprimir = "SUBTOTAL ACUMULADO:       " + totalB;
-                    e.Graphics.DrawString(imprimir, font, Brushes.Black, new RectangleF(x, y, 200, 20));
-                    y += 25;
-                    x = 0;
-                    imprimir = "DESDE FRA. Nro:        " + listB[i].desde;
-                    e.Graphics.DrawString(imprimir, font, Brushes.Black, new RectangleF(x, y, 200, 20));
-                    x += 210;
-                    imprimir = "HASTA FRA. Nro:        " + listB[i].hasta;
-                    e.Graphics.DrawString(imprimir, font, Brushes.Black, new RectangleF(x, y, 200, 50));
-                    x = 0;
-                    y += 25;
+                    x += 0;
+                    
                 }
                 //y += 25;
                 //font = new Font("Arial", 12, FontStyle.Bold, GraphicsUnit.Point);
                 // e.Graphics.DrawString("SUBTOTAL B: " + totalB.ToString(), font, Brushes.Black, new RectangleF(10, y + 20, 200, 50));
+                imprimir = "SUBTOTAL DIARIO : " + totalsinivadiarioA + "    TOTAL MENSUAL :    " + totalsinivaA;
+                e.Graphics.DrawString(imprimir, font, Brushes.Black, new RectangleF(x, y, 500, 20));
+                y += 25;
+                imprimir = "DESDE FRA.Nro    " + desde + "  HASTA FRA. Nro:        " + hasta;
+                e.Graphics.DrawString(imprimir, font, Brushes.Black, new RectangleF(x, y, 500, 50));
+                x = 0;
+                y += 25;
             }
             posAct = 0;
             y = 0;
@@ -568,42 +628,100 @@ namespace POS_Fiscal
                     con.Open();
                     rd = readQuery(Query, con);
                     float total = 0;
-                    if (rd.Read())
+                    if(tabla == "stock.ventasbdiarias")
                     {
-                        men.desde = rd.GetString("NROCOMPROBANTE");
-                        men.fecha = rd.GetString("FECHA");
-                        total = total + rd.GetFloat("MONTOTOTAL");
-                        men.ingreso = total;
-                        men.hasta = men.desde;
-                    }
-                    while (rd.Read())
-                    {
-                        men.ingreso = total + rd.GetFloat("MONTOTOTAL");
-                        men.fecha = rd.GetString("FECHA");
-                        men.ingreso = total;
-                        men.hasta = rd.GetString("NROCOMPROBANTE");
-                    }
-                    rd.Close();
-                    con.Close();
-                    con.Open();
-                    if (men.fecha != null)
-                    {
-                        Query = "SELECT * FROM " + tabla2 + " WHERE FECHA=" + men.fecha;
-                        rd = Helpers.readQuery(Query, con);
                         if (rd.Read())
                         {
-                            rd.Close();
-                            con.Close();
+                            men.desde = rd.GetString("NROCOMPROBANTE");
+                            men.fecha = rd.GetString("FECHA");
+                            total = total + rd.GetFloat("MONTOTOTAL");
+                            men.ingreso = total;
+                            men.hasta = men.desde;
                         }
-                        else
+                        while (rd.Read())
                         {
-                            rd.Close();
-                            con.Close();
-                            con.Open();
-                            Query = "INSERT INTO " + tabla2 + " (DESDE, HASTA, INGRESOS, FECHA) VALUES ('" + men.desde + "' ,'" + men.hasta + "' , '" + men.ingreso + "' , '" + men.fecha + "')";
-                            Helpers.NonQuery(Query, con);
-                            con.Close();
+                            men.ingreso = total + rd.GetFloat("MONTOTOTAL");
+                            men.fecha = rd.GetString("FECHA");
+                            men.ingreso = total;
+                            men.hasta = rd.GetString("NROCOMPROBANTE");
                         }
+                        rd.Close();
+                        con.Close();
+                        con.Open();
+                        if (men.fecha != null)
+                        {
+                            Query = "SELECT * FROM " + tabla2 + " WHERE FECHA=" + men.fecha;
+                            rd = Helpers.readQuery(Query, con);
+                            if (rd.Read())
+                            {
+                                rd.Close();
+                                con.Close();
+                            }
+                            else
+                            {
+                                rd.Close();
+                                con.Close();
+                                con.Open();
+                                Query = "INSERT INTO " + tabla2 + " (DESDE, HASTA, INGRESOS, FECHA) VALUES ('" + men.desde + "' ,'" + men.hasta + "' , '" + men.ingreso + "' , '" + men.fecha + "')";
+                                Helpers.NonQuery(Query, con);
+                                con.Close();
+                            }
+                        }
+                    }
+                    else
+                    {
+                        List<mensual> listaux = new List<mensual>();
+                        List<mensual> ListA = new List<mensual>();
+                        while (rd.Read())
+                        {
+                            men.ingreso = rd.GetFloat("MONTOTOTAL");
+                            men.fecha = rd.GetString("FECHA");
+                            men.imsiniva = men.ingreso / 1.21f;
+                            men.iva = men.ingreso - men.imsiniva;
+                            men.documento = rd.GetString("DOC");
+                            men.hasta = rd.GetString("NROCOMPROBANTE");
+                            
+                            listaux.Add(men);
+                        }
+                        rd.Close();
+                        for(int i = 0; i < listaux.Count; i++)
+                        {
+                            string Query2 = "SELECT * FROM stock.clientes WHERE DOC=" + listaux[i].documento;
+                            MySqlDataReader rd2 = readQuery(Query2, con);
+                            mensual aux = new mensual();
+                            aux.documento = listaux[i].documento;
+                            aux.fecha = listaux[i].fecha;
+                            aux.hasta = listaux[i].hasta;
+                            aux.imsiniva = listaux[i].imsiniva;
+                            aux.iva = listaux[i].iva;
+                            aux.ingreso = listaux[i].ingreso;
+                            if (rd2.Read())
+                            {
+                                aux.nombre = rd2.GetString("NOMBRE");
+                            }
+                            rd2.Close();
+                            ListA.Add(aux);
+                            if(ListA[i].fecha != "")
+                            {
+                                Query = "SELECT * FROM " + tabla2 + " WHERE FECHA=" + ListA[i].fecha + " AND INGRESOS=" + ListA[i].ingreso + " AND NOMBRE=" + "'" + ListA[i].nombre +"'";
+                                rd = Helpers.readQuery(Query, con);
+                                if (rd.Read())
+                                {
+                                    rd.Close();
+                                }
+                                else
+                                {
+                                    rd.Close();
+                                    string iva = ListA[i].iva.ToString();
+                                    iva = iva.Replace(',', '.');
+                                    string importesiniva = ListA[i].imsiniva.ToString();
+                                    importesiniva = importesiniva.Replace(',', '.');
+                                    Query = "INSERT INTO " + tabla2 + " (HASTA, INGRESOS, FECHA, IVA, IMPORTESINIVA, DOCUMENTO, NOMBRE) VALUES ('" + ListA[i].hasta + "' , '" + ListA[i].ingreso + "' , '" + ListA[i].fecha + "' ,'" + iva + "' ,'" + importesiniva + "' ,'" + ListA[i].documento + "' ,'" + ListA[i].nombre + "')";
+                                    Helpers.NonQuery(Query, con);
+                                }
+                            }  
+                        }
+                        con.Close();
                     }
                 }
                 else

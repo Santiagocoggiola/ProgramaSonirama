@@ -33,14 +33,15 @@ namespace POS_Fiscal
             this.BtnFacturacion = new System.Windows.Forms.Button();
             this.BtnIngresos = new System.Windows.Forms.Button();
             this.BtnProveedores = new System.Windows.Forms.Button();
+            this.TxtSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnStock
             // 
             this.BtnStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnStock.Location = new System.Drawing.Point(186, 184);
+            this.BtnStock.Location = new System.Drawing.Point(591, 224);
             this.BtnStock.Name = "BtnStock";
-            this.BtnStock.Size = new System.Drawing.Size(150, 76);
+            this.BtnStock.Size = new System.Drawing.Size(281, 145);
             this.BtnStock.TabIndex = 3;
             this.BtnStock.Text = "Stock";
             this.BtnStock.UseVisualStyleBackColor = true;
@@ -49,9 +50,9 @@ namespace POS_Fiscal
             // BtnFacturacion
             // 
             this.BtnFacturacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnFacturacion.Location = new System.Drawing.Point(186, 78);
+            this.BtnFacturacion.Location = new System.Drawing.Point(591, 61);
             this.BtnFacturacion.Name = "BtnFacturacion";
-            this.BtnFacturacion.Size = new System.Drawing.Size(150, 76);
+            this.BtnFacturacion.Size = new System.Drawing.Size(281, 145);
             this.BtnFacturacion.TabIndex = 2;
             this.BtnFacturacion.Text = "Facturacion";
             this.BtnFacturacion.UseVisualStyleBackColor = true;
@@ -60,9 +61,9 @@ namespace POS_Fiscal
             // BtnIngresos
             // 
             this.BtnIngresos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnIngresos.Location = new System.Drawing.Point(186, 290);
+            this.BtnIngresos.Location = new System.Drawing.Point(591, 387);
             this.BtnIngresos.Name = "BtnIngresos";
-            this.BtnIngresos.Size = new System.Drawing.Size(150, 76);
+            this.BtnIngresos.Size = new System.Drawing.Size(281, 145);
             this.BtnIngresos.TabIndex = 4;
             this.BtnIngresos.Text = "Ingresos";
             this.BtnIngresos.UseVisualStyleBackColor = true;
@@ -71,19 +72,31 @@ namespace POS_Fiscal
             // BtnProveedores
             // 
             this.BtnProveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnProveedores.Location = new System.Drawing.Point(186, 396);
+            this.BtnProveedores.Location = new System.Drawing.Point(591, 550);
             this.BtnProveedores.Name = "BtnProveedores";
-            this.BtnProveedores.Size = new System.Drawing.Size(150, 76);
+            this.BtnProveedores.Size = new System.Drawing.Size(281, 145);
             this.BtnProveedores.TabIndex = 5;
             this.BtnProveedores.Text = "Proveedores";
             this.BtnProveedores.UseVisualStyleBackColor = true;
             this.BtnProveedores.Click += new System.EventHandler(this.BtnProveedores_Click);
             // 
+            // TxtSalir
+            // 
+            this.TxtSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSalir.Location = new System.Drawing.Point(591, 713);
+            this.TxtSalir.Name = "TxtSalir";
+            this.TxtSalir.Size = new System.Drawing.Size(281, 145);
+            this.TxtSalir.TabIndex = 6;
+            this.TxtSalir.Text = "Salir";
+            this.TxtSalir.UseVisualStyleBackColor = true;
+            this.TxtSalir.Click += new System.EventHandler(this.TxtSalir_Click);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 555);
+            this.ClientSize = new System.Drawing.Size(1264, 961);
+            this.Controls.Add(this.TxtSalir);
             this.Controls.Add(this.BtnProveedores);
             this.Controls.Add(this.BtnIngresos);
             this.Controls.Add(this.BtnStock);
@@ -101,5 +114,6 @@ namespace POS_Fiscal
         private System.Windows.Forms.Button BtnFacturacion;
         private System.Windows.Forms.Button BtnIngresos;
         private System.Windows.Forms.Button BtnProveedores;
+        private System.Windows.Forms.Button TxtSalir;
     }
 }

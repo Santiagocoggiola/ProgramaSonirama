@@ -36,11 +36,6 @@ namespace POS_Fiscal
             fa.Show();
         }
 
-        private void MenuPrincipal_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button6_Click(object sender, EventArgs e)
         {
             MenuPrincipal mp = new MenuPrincipal();
@@ -156,12 +151,6 @@ namespace POS_Fiscal
             this.Hide();
             Ventas ven = new Ventas();
             ven.Show();
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            Printer.CerrarComprobante();
-            Printer.Desconectar();
         }
     }
 }

@@ -32,14 +32,15 @@ namespace POS_Fiscal
             this.BtnAtras = new System.Windows.Forms.Button();
             this.BtnConsultas = new System.Windows.Forms.Button();
             this.BtnCargaIng = new System.Windows.Forms.Button();
+            this.BtnIvaCompras = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnAtras
             // 
             this.BtnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAtras.Location = new System.Drawing.Point(107, 267);
+            this.BtnAtras.Location = new System.Drawing.Point(513, 633);
             this.BtnAtras.Name = "BtnAtras";
-            this.BtnAtras.Size = new System.Drawing.Size(150, 40);
+            this.BtnAtras.Size = new System.Drawing.Size(251, 133);
             this.BtnAtras.TabIndex = 32;
             this.BtnAtras.Text = "Atras";
             this.BtnAtras.UseVisualStyleBackColor = true;
@@ -48,9 +49,9 @@ namespace POS_Fiscal
             // BtnConsultas
             // 
             this.BtnConsultas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnConsultas.Location = new System.Drawing.Point(107, 174);
+            this.BtnConsultas.Location = new System.Drawing.Point(513, 301);
             this.BtnConsultas.Name = "BtnConsultas";
-            this.BtnConsultas.Size = new System.Drawing.Size(150, 40);
+            this.BtnConsultas.Size = new System.Drawing.Size(251, 133);
             this.BtnConsultas.TabIndex = 30;
             this.BtnConsultas.Text = "Consulta";
             this.BtnConsultas.UseVisualStyleBackColor = true;
@@ -59,19 +60,31 @@ namespace POS_Fiscal
             // BtnCargaIng
             // 
             this.BtnCargaIng.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCargaIng.Location = new System.Drawing.Point(107, 88);
+            this.BtnCargaIng.Location = new System.Drawing.Point(513, 135);
             this.BtnCargaIng.Name = "BtnCargaIng";
-            this.BtnCargaIng.Size = new System.Drawing.Size(150, 40);
+            this.BtnCargaIng.Size = new System.Drawing.Size(251, 133);
             this.BtnCargaIng.TabIndex = 28;
             this.BtnCargaIng.Text = "Carga Ing";
             this.BtnCargaIng.UseVisualStyleBackColor = true;
             this.BtnCargaIng.Click += new System.EventHandler(this.BtnCargaIng_Click);
             // 
+            // BtnIvaCompras
+            // 
+            this.BtnIvaCompras.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnIvaCompras.Location = new System.Drawing.Point(513, 467);
+            this.BtnIvaCompras.Name = "BtnIvaCompras";
+            this.BtnIvaCompras.Size = new System.Drawing.Size(251, 133);
+            this.BtnIvaCompras.TabIndex = 33;
+            this.BtnIvaCompras.Text = "Iva Compras";
+            this.BtnIvaCompras.UseVisualStyleBackColor = true;
+            this.BtnIvaCompras.Click += new System.EventHandler(this.BtnIvaCompras_Click);
+            // 
             // IngreInterno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 497);
+            this.ClientSize = new System.Drawing.Size(1264, 961);
+            this.Controls.Add(this.BtnIvaCompras);
             this.Controls.Add(this.BtnAtras);
             this.Controls.Add(this.BtnConsultas);
             this.Controls.Add(this.BtnCargaIng);
@@ -87,5 +100,6 @@ namespace POS_Fiscal
         private System.Windows.Forms.Button BtnAtras;
         private System.Windows.Forms.Button BtnConsultas;
         private System.Windows.Forms.Button BtnCargaIng;
+        private System.Windows.Forms.Button BtnIvaCompras;
     }
 }
