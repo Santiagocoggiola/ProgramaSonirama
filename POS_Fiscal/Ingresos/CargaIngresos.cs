@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-namespace POS_Fiscal
+namespace Sonirama
 {
     public partial class CargaIngresos : Form
     {
@@ -151,8 +151,8 @@ namespace POS_Fiscal
                     
 
                     rd2.Close();
-                    Query2 = "INSERT INTO stock.ingreso_facturas (PROVEEDOR, CUITNRO, FECHA, NROFACT, IMPSIVA, IVA, IMPCIVA) " +
-                            "VALUES ('" + nombreproveedor + "', " + "'" + cuitNro + "', '" + fechaaux + "', '" + nroFact + "', " + impsiva + ", '" + ivaaux + "', '" + impciva + "')";
+                    Query2 = "INSERT INTO stock.ingreso_facturas (PROVEEDOR, CUITNRO, FECHA, NROFACT, IMPSIVA, IVA, IMPCIVA, TIPODOC) " +
+                            "VALUES ('" + nombreproveedor + "', " + "'" + cuitNro + "', '" + fechaaux + "', '" + nroFact + "', " + impsiva + ", '" + ivaaux + "', '" + impciva + "' ,'F')";
                     Helpers.NonQuery(Query2, con);
                     con.Close();
                     for (int i = 0; i < list.Count; ++i)

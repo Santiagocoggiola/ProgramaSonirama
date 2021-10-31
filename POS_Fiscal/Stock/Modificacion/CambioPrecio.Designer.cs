@@ -1,5 +1,5 @@
 ﻿
-namespace POS_Fiscal
+namespace Sonirama
 {
     partial class CambioPrecio
     {
@@ -248,34 +248,37 @@ namespace POS_Fiscal
             // 
             // BtnBuscar
             // 
+            this.BtnBuscar.BackColor = System.Drawing.Color.PowderBlue;
             this.BtnBuscar.Location = new System.Drawing.Point(1050, 70);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(202, 84);
             this.BtnBuscar.TabIndex = 19;
             this.BtnBuscar.Text = "Buscar";
-            this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.UseVisualStyleBackColor = false;
             this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // BtnCambiar
             // 
+            this.BtnCambiar.BackColor = System.Drawing.Color.PowderBlue;
             this.BtnCambiar.Location = new System.Drawing.Point(1039, 636);
             this.BtnCambiar.Name = "BtnCambiar";
             this.BtnCambiar.Size = new System.Drawing.Size(180, 58);
             this.BtnCambiar.TabIndex = 20;
             this.BtnCambiar.Text = "Cambiar";
-            this.BtnCambiar.UseVisualStyleBackColor = true;
+            this.BtnCambiar.UseVisualStyleBackColor = false;
             this.BtnCambiar.Visible = false;
             this.BtnCambiar.Click += new System.EventHandler(this.BtnCambiar_Click);
             // 
             // BtnAtras
             // 
+            this.BtnAtras.BackColor = System.Drawing.Color.Salmon;
             this.BtnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.BtnAtras.Location = new System.Drawing.Point(12, 831);
             this.BtnAtras.Name = "BtnAtras";
             this.BtnAtras.Size = new System.Drawing.Size(229, 118);
             this.BtnAtras.TabIndex = 21;
             this.BtnAtras.Text = "Atras";
-            this.BtnAtras.UseVisualStyleBackColor = true;
+            this.BtnAtras.UseVisualStyleBackColor = false;
             this.BtnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
             // 
             // label6
@@ -315,7 +318,7 @@ namespace POS_Fiscal
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label8.Location = new System.Drawing.Point(-4, 1);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(809, 46);
+            this.label8.Size = new System.Drawing.Size(1301, 66);
             this.label8.TabIndex = 45;
             // 
             // label9

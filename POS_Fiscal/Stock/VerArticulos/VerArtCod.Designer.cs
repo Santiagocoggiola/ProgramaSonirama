@@ -1,5 +1,5 @@
 ﻿
-namespace POS_Fiscal
+namespace Sonirama
 {
     partial class VerArtCod
     {
@@ -458,7 +458,7 @@ namespace POS_Fiscal
             // 
             // btnBuscar
             // 
-            this.btnBuscar.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnBuscar.BackColor = System.Drawing.Color.PowderBlue;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.btnBuscar.Location = new System.Drawing.Point(945, 14);
             this.btnBuscar.Name = "btnBuscar";
@@ -470,9 +470,9 @@ namespace POS_Fiscal
             // 
             // BtnAtras
             // 
-            this.BtnAtras.BackColor = System.Drawing.Color.Firebrick;
+            this.BtnAtras.BackColor = System.Drawing.Color.Salmon;
             this.BtnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.BtnAtras.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnAtras.ForeColor = System.Drawing.SystemColors.ControlText;
             this.BtnAtras.Location = new System.Drawing.Point(12, 863);
             this.BtnAtras.Name = "BtnAtras";
             this.BtnAtras.Size = new System.Drawing.Size(233, 86);

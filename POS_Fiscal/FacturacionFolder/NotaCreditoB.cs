@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace POS_Fiscal
+namespace Sonirama
 {
     public partial class NotaCreditoB : Form
     {
@@ -18,32 +18,26 @@ namespace POS_Fiscal
             InitializeComponent();
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            Facturacion fac = new Facturacion();
-            this.Hide();
-
-            fac.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        //Busca en la base de datos la factura para cargarla y mostrarla en pantalla.
+        private void BtnBuscar_Click(object sender, EventArgs e)
         {
             dataGridView1.Rows.Clear();
             list = PrinterFun.Buscar(txtComprobante.Text, "stock.ventasb");
-            for(int i = 0; i < list.Count; ++i)
+            for (int i = 0; i < list.Count; ++i)
             {
                 PrinterFun.datos dat = list.ElementAt(i);
                 dataGridView1.Rows.Add(dat.NroComprobante, dat.NombreItem, dat.Cantidad, dat.PrecioUnitario, dat.Codigo, dat.Fecha, dat.Doc);
             }
-            button2.Enabled = true;
+            BtnImprimir.Enabled = true;
         }
-        private void button2_Click(object sender, EventArgs e)
+        //Utiliza la factura previamente buscada para imprimirla como nota de credito
+        private void BtnImprimir_Click(object sender, EventArgs e)
         {
             string comprobante = "82-00000-" + txtComprobante.Text;
             string dni = "", nombre = "", direccion = "";
             int condicion = 5;
             int tipodoc = 1;
-            if(comboBox1.GetItemText(comboBox1.SelectedItem) != "Consumidor Final")
+            if (comboBox1.GetItemText(comboBox1.SelectedItem) != "Consumidor Final")
             {
                 condicion = 6;
             }
@@ -67,16 +61,22 @@ namespace POS_Fiscal
                 nombre = txtNombre.Text;
                 direccion = txtDireccion.Text;
             }
-            if(comboBox1.GetItemText(comboBox1.SelectedItem) == "CUIT")
+            if (comboBox1.GetItemText(comboBox1.SelectedItem) == "CUIT")
             {
                 tipodoc = 3;
             }
-            if(comboBox1.GetItemText(comboBox1.SelectedItem) == "CUIL")
+            if (comboBox1.GetItemText(comboBox1.SelectedItem) == "CUIL")
             {
                 tipodoc = 2;
             }
-            PrinterFun.ImprimirNotaCredito(comprobante, list , nombre,direccion, tipodoc, dni, condicion, 3, txtDescripcion.Text);
+            PrinterFun.ImprimirNotaCredito(comprobante, list, nombre, direccion, tipodoc, dni, condicion, 3, txtDescripcion.Text);
+        }
 
+        private void BtnAtras_Click(object sender, EventArgs e)
+        {
+            Facturacion fac = new Facturacion();
+            this.Hide();
+            fac.Show();
         }
     }
 }

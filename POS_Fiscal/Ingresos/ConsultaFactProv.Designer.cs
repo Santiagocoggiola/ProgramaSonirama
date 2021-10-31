@@ -1,5 +1,5 @@
 ﻿
-namespace POS_Fiscal
+namespace Sonirama
 {
     partial class ConsultaFactProv
     {
@@ -29,6 +29,7 @@ namespace POS_Fiscal
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaFactProv));
             this.BtnAtras = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,18 +48,20 @@ namespace POS_Fiscal
             this.label1 = new System.Windows.Forms.Label();
             this.TxtProveedor = new System.Windows.Forms.TextBox();
             this.BtnBuscar = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnAtras
             // 
+            this.BtnAtras.BackColor = System.Drawing.Color.Salmon;
             this.BtnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.BtnAtras.Location = new System.Drawing.Point(12, 864);
             this.BtnAtras.Name = "BtnAtras";
             this.BtnAtras.Size = new System.Drawing.Size(185, 85);
             this.BtnAtras.TabIndex = 1;
             this.BtnAtras.Text = "Atras";
-            this.BtnAtras.UseVisualStyleBackColor = true;
+            this.BtnAtras.UseVisualStyleBackColor = false;
             this.BtnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
             // 
             // dataGridView1
@@ -182,19 +185,31 @@ namespace POS_Fiscal
             // 
             // BtnBuscar
             // 
+            this.BtnBuscar.BackColor = System.Drawing.Color.PowderBlue;
             this.BtnBuscar.Location = new System.Drawing.Point(301, 16);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(92, 44);
             this.BtnBuscar.TabIndex = 73;
             this.BtnBuscar.Text = "Buscar Factura";
-            this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.UseVisualStyleBackColor = false;
             this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click_1);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(399, 5);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(839, 55);
+            this.label8.TabIndex = 74;
+            this.label8.Text = "CONSULTA FACTURAS COMPRAS";
             // 
             // ConsultaFactProv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 961);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtProveedor);
@@ -202,6 +217,7 @@ namespace POS_Fiscal
             this.Controls.Add(this.TxtNumeroFactura);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.BtnAtras);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConsultaFactProv";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConsultaFactProv";
@@ -230,5 +246,6 @@ namespace POS_Fiscal
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TxtProveedor;
         private System.Windows.Forms.Button BtnBuscar;
+        private System.Windows.Forms.Label label8;
     }
 }

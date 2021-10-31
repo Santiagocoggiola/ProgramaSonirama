@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace POS_Fiscal.Properties {
+namespace Sonirama.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

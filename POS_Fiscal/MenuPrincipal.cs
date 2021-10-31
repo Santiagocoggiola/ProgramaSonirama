@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-namespace POS_Fiscal
+namespace Sonirama
 {
     public partial class MenuPrincipal : Form
     {
@@ -33,7 +32,7 @@ namespace POS_Fiscal
 
         private void BtnProveedores_Click(object sender, EventArgs e)
         {
-            Proveedores prov = new Proveedores();
+            ProvInterno prov = new ProvInterno();
             this.Hide();
             prov.Show();
         }

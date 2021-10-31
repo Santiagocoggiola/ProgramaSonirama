@@ -1,5 +1,5 @@
 ﻿
-namespace POS_Fiscal
+namespace Sonirama
 {
     partial class BusquedaPorCompra
     {
@@ -29,6 +29,7 @@ namespace POS_Fiscal
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BusquedaPorCompra));
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.NroFactura = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,13 +47,14 @@ namespace POS_Fiscal
             // 
             // BtnBuscar
             // 
+            this.BtnBuscar.BackColor = System.Drawing.Color.PowderBlue;
             this.BtnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
             this.BtnBuscar.Location = new System.Drawing.Point(713, 13);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(118, 65);
             this.BtnBuscar.TabIndex = 20;
             this.BtnBuscar.Text = "Buscar";
-            this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.UseVisualStyleBackColor = false;
             this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // dataGridView1
@@ -68,7 +70,7 @@ namespace POS_Fiscal
             this.Fecha});
             this.dataGridView1.Location = new System.Drawing.Point(248, 84);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(735, 794);
+            this.dataGridView1.Size = new System.Drawing.Size(743, 794);
             this.dataGridView1.TabIndex = 19;
             // 
             // NroFactura
@@ -123,13 +125,14 @@ namespace POS_Fiscal
             // 
             // BtnAtras
             // 
+            this.BtnAtras.BackColor = System.Drawing.Color.Salmon;
             this.BtnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
             this.BtnAtras.Location = new System.Drawing.Point(19, 886);
             this.BtnAtras.Name = "BtnAtras";
             this.BtnAtras.Size = new System.Drawing.Size(118, 65);
             this.BtnAtras.TabIndex = 17;
             this.BtnAtras.Text = "Atras";
-            this.BtnAtras.UseVisualStyleBackColor = true;
+            this.BtnAtras.UseVisualStyleBackColor = false;
             this.BtnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
             // 
             // label1
@@ -152,6 +155,7 @@ namespace POS_Fiscal
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.TxtCompra);
             this.Controls.Add(this.BtnAtras);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BusquedaPorCompra";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BusquedaPorCompra";

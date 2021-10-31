@@ -12,7 +12,7 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using System.Drawing.Printing;
 
-namespace POS_Fiscal
+namespace Sonirama
 {
     public partial class Facturacion : Form
     {

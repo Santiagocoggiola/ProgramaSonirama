@@ -1,5 +1,5 @@
 ﻿
-namespace POS_Fiscal
+namespace Sonirama
 {
     partial class NotaCreditoA
     {
@@ -29,6 +29,7 @@ namespace POS_Fiscal
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NotaCreditoA));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.NroComprobante = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Articulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -37,7 +38,7 @@ namespace POS_Fiscal
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NroDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button6 = new System.Windows.Forms.Button();
+            this.BtnAtras = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -48,10 +49,11 @@ namespace POS_Fiscal
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnImprimir = new System.Windows.Forms.Button();
             this.txtComprobante = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +68,7 @@ namespace POS_Fiscal
             this.Codigo,
             this.Fecha,
             this.NroDocumento});
-            this.dataGridView1.Location = new System.Drawing.Point(260, 11);
+            this.dataGridView1.Location = new System.Drawing.Point(278, 113);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(943, 786);
             this.dataGridView1.TabIndex = 29;
@@ -114,16 +116,17 @@ namespace POS_Fiscal
             this.NroDocumento.Name = "NroDocumento";
             this.NroDocumento.ReadOnly = true;
             // 
-            // button6
+            // BtnAtras
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.button6.Location = new System.Drawing.Point(12, 849);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(260, 100);
-            this.button6.TabIndex = 23;
-            this.button6.Text = "Atras";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.BtnAtras.BackColor = System.Drawing.Color.Salmon;
+            this.BtnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.BtnAtras.Location = new System.Drawing.Point(12, 849);
+            this.BtnAtras.Name = "BtnAtras";
+            this.BtnAtras.Size = new System.Drawing.Size(260, 100);
+            this.BtnAtras.TabIndex = 23;
+            this.BtnAtras.Text = "Atras";
+            this.BtnAtras.UseVisualStyleBackColor = false;
+            this.BtnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
             // 
             // label7
             // 
@@ -214,16 +217,18 @@ namespace POS_Fiscal
             this.txtDescripcion.Size = new System.Drawing.Size(242, 20);
             this.txtDescripcion.TabIndex = 48;
             // 
-            // button2
+            // BtnImprimir
             // 
-            this.button2.Enabled = false;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(12, 574);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 36);
-            this.button2.TabIndex = 47;
-            this.button2.Text = "Imprimir";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnImprimir.BackColor = System.Drawing.Color.PowderBlue;
+            this.BtnImprimir.Enabled = false;
+            this.BtnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnImprimir.Location = new System.Drawing.Point(12, 574);
+            this.BtnImprimir.Name = "BtnImprimir";
+            this.BtnImprimir.Size = new System.Drawing.Size(130, 36);
+            this.BtnImprimir.TabIndex = 47;
+            this.BtnImprimir.Text = "Imprimir";
+            this.BtnImprimir.UseVisualStyleBackColor = false;
+            this.BtnImprimir.Click += new System.EventHandler(this.BtnImprimir_Click);
             // 
             // txtComprobante
             // 
@@ -242,21 +247,34 @@ namespace POS_Fiscal
             this.label1.TabIndex = 45;
             this.label1.Text = "Numero Comprobante";
             // 
-            // button1
+            // BtnBuscar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 480);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 33);
-            this.button1.TabIndex = 44;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnBuscar.BackColor = System.Drawing.Color.PowderBlue;
+            this.BtnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBuscar.Location = new System.Drawing.Point(12, 480);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(130, 33);
+            this.BtnBuscar.TabIndex = 44;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.UseVisualStyleBackColor = false;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(413, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(445, 55);
+            this.label4.TabIndex = 60;
+            this.label4.Text = "NOTA CREDITO A";
             // 
             // NotaCreditoA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 961);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.comboBox1);
@@ -267,12 +285,13 @@ namespace POS_Fiscal
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BtnImprimir);
             this.Controls.Add(this.txtComprobante);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.BtnAtras);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NotaCreditoA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NotaCreditoA";
@@ -284,7 +303,7 @@ namespace POS_Fiscal
 
         #endregion
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button BtnAtras;
         private System.Windows.Forms.DataGridViewTextBoxColumn NroComprobante;
         private System.Windows.Forms.DataGridViewTextBoxColumn Articulo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
@@ -302,9 +321,10 @@ namespace POS_Fiscal
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnImprimir;
         private System.Windows.Forms.TextBox txtComprobante;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnBuscar;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace POS_Fiscal
+namespace Sonirama
 {
     public partial class BusquedaPorProveedor : Form
     {

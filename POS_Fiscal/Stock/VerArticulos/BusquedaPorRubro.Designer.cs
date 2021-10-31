@@ -1,5 +1,5 @@
 ﻿
-namespace POS_Fiscal
+namespace Sonirama
 {
     partial class BusquedaPorRubro
     {
@@ -29,6 +29,7 @@ namespace POS_Fiscal
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BusquedaPorRubro));
             this.BtnAtras = new System.Windows.Forms.Button();
             this.TxtRubro = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -46,13 +47,14 @@ namespace POS_Fiscal
             // 
             // BtnAtras
             // 
+            this.BtnAtras.BackColor = System.Drawing.Color.Salmon;
             this.BtnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
             this.BtnAtras.Location = new System.Drawing.Point(12, 884);
             this.BtnAtras.Name = "BtnAtras";
             this.BtnAtras.Size = new System.Drawing.Size(118, 65);
             this.BtnAtras.TabIndex = 1;
             this.BtnAtras.Text = "Atras";
-            this.BtnAtras.UseVisualStyleBackColor = true;
+            this.BtnAtras.UseVisualStyleBackColor = false;
             this.BtnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
             // 
             // TxtRubro
@@ -126,13 +128,14 @@ namespace POS_Fiscal
             // 
             // BtnBuscar
             // 
+            this.BtnBuscar.BackColor = System.Drawing.Color.PowderBlue;
             this.BtnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
             this.BtnBuscar.Location = new System.Drawing.Point(844, 13);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(118, 65);
             this.BtnBuscar.TabIndex = 4;
             this.BtnBuscar.Text = "Buscar";
-            this.BtnBuscar.UseVisualStyleBackColor = true;
+            this.BtnBuscar.UseVisualStyleBackColor = false;
             this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // label1
@@ -155,6 +158,7 @@ namespace POS_Fiscal
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.TxtRubro);
             this.Controls.Add(this.BtnAtras);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BusquedaPorRubro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BusquedaPorRubro";

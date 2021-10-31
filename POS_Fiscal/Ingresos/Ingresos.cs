@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace POS_Fiscal
+namespace Sonirama
 {
     public partial class Ingresos : Form
     {
@@ -29,6 +29,13 @@ namespace POS_Fiscal
             IngreInterno ing = new IngreInterno();
             this.Hide();
             ing.Show();
+        }
+
+        private void BtnRemitos_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Remitos rem = new Remitos();
+            rem.Show();
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-namespace POS_Fiscal
+namespace Sonirama
 {
     public partial class Modificaciones : Form
     {
@@ -42,6 +42,20 @@ namespace POS_Fiscal
             PMargen p = new PMargen();
             this.Hide();
             p.Show();
+        }
+
+        private void BtnCambioInt_Click(object sender, EventArgs e)
+        {
+            CambioInteres cam = new CambioInteres();
+            cam.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CambioPrecioGlobal glo = new CambioPrecioGlobal();
+            glo.Show();
         }
     }
 }

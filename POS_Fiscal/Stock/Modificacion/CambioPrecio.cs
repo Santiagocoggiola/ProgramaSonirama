@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-namespace POS_Fiscal
+namespace Sonirama
 {
     public partial class CambioPrecio : Form
     {

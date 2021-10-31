@@ -1,5 +1,5 @@
 ﻿
-namespace POS_Fiscal
+namespace Sonirama
 {
     partial class IvaCompras
     {
@@ -29,74 +29,80 @@ namespace POS_Fiscal
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IvaCompras));
             this.TxtFecha = new System.Windows.Forms.TextBox();
             this.BtnImprimir = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnAtras = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // TxtFecha
             // 
-            this.TxtFecha.Location = new System.Drawing.Point(350, 191);
+            this.TxtFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFecha.Location = new System.Drawing.Point(613, 298);
             this.TxtFecha.Name = "TxtFecha";
-            this.TxtFecha.Size = new System.Drawing.Size(100, 20);
+            this.TxtFecha.Size = new System.Drawing.Size(157, 47);
             this.TxtFecha.TabIndex = 0;
             // 
             // BtnImprimir
             // 
+            this.BtnImprimir.BackColor = System.Drawing.Color.PowderBlue;
             this.BtnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnImprimir.Location = new System.Drawing.Point(350, 217);
+            this.BtnImprimir.Location = new System.Drawing.Point(460, 351);
             this.BtnImprimir.Name = "BtnImprimir";
-            this.BtnImprimir.Size = new System.Drawing.Size(100, 32);
+            this.BtnImprimir.Size = new System.Drawing.Size(353, 124);
             this.BtnImprimir.TabIndex = 1;
             this.BtnImprimir.Text = "Imprimir";
-            this.BtnImprimir.UseVisualStyleBackColor = true;
+            this.BtnImprimir.UseVisualStyleBackColor = false;
             this.BtnImprimir.Click += new System.EventHandler(this.BtnImprimir_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.Location = new System.Drawing.Point(263, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 31);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Iva Compras del Mes";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label2.Location = new System.Drawing.Point(258, 187);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(453, 298);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 24);
+            this.label2.Size = new System.Drawing.Size(154, 39);
             this.label2.TabIndex = 3;
             this.label2.Text = "Mes/Año";
             // 
             // BtnAtras
             // 
+            this.BtnAtras.BackColor = System.Drawing.Color.Salmon;
             this.BtnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAtras.Location = new System.Drawing.Point(12, 406);
+            this.BtnAtras.Location = new System.Drawing.Point(12, 848);
             this.BtnAtras.Name = "BtnAtras";
-            this.BtnAtras.Size = new System.Drawing.Size(100, 32);
+            this.BtnAtras.Size = new System.Drawing.Size(334, 101);
             this.BtnAtras.TabIndex = 4;
             this.BtnAtras.Text = "Atras";
-            this.BtnAtras.UseVisualStyleBackColor = true;
+            this.BtnAtras.UseVisualStyleBackColor = false;
             this.BtnAtras.Click += new System.EventHandler(this.BtnAtras_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(349, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(600, 55);
+            this.label8.TabIndex = 64;
+            this.label8.Text = "IVA COMPRAS DEL MES";
             // 
             // IvaCompras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1264, 961);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.BtnAtras);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnImprimir);
             this.Controls.Add(this.TxtFecha);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "IvaCompras";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IvaCompras";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -107,9 +113,9 @@ namespace POS_Fiscal
 
         private System.Windows.Forms.TextBox TxtFecha;
         private System.Windows.Forms.Button BtnImprimir;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnAtras;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.Label label8;
     }
 }

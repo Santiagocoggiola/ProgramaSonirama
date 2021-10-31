@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace POS_Fiscal
+namespace Sonirama
 {
     public partial class BusquedaPorCodigoProveedor : Form
     {
@@ -22,21 +22,35 @@ namespace POS_Fiscal
             dataGridView1.Rows.Clear();
             if (TxtCodProv.Text != "")
             {
-                List<Helpers.Producto> productos = new List<Helpers.Producto>();
+                List<Helpers.Producto> productosA = new List<Helpers.Producto>();
+                List<Helpers.Producto> productosB = new List<Helpers.Producto>();
                 Helpers.Producto p = new Helpers.Producto();
                 string searchBy = "CODIPROVEE LIKE '%" + TxtCodProv.Text + "%'";
-                productos = Helpers.BusquedaStock(productos, searchBy);
-                for (int i = 0; i < productos.Count; ++i)
+                productosA = Helpers.BusquedaStock(productosA, searchBy);
+                for (int i = 0; i < productosA.Count; ++i)
                 {
-                    p = productos.ElementAt(i);
+                    p = productosA.ElementAt(i);
                     dataGridView1.Rows.Add(p.codigo, p.digito, p.codProv, p.Nombre, p.costo, p.cantidad, p.precioUnitario);
                 }
                 searchBy = "CODIPROVE2 LIKE '%" + TxtCodProv.Text + "%'";
-                productos = Helpers.BusquedaStock(productos, searchBy);
-                for (int i = 0; i < productos.Count; ++i)
+                productosB = Helpers.BusquedaStock(productosB, searchBy);
+                for (int i = 0; i < productosB.Count; ++i)
                 {
-                    p = productos.ElementAt(i);
-                    dataGridView1.Rows.Add(p.codigo, p.digito, p.codProv, p.Nombre, p.costo, p.cantidad, p.precioUnitario);
+                    bool estaenB = false;
+                    for(int j = 0; j < productosA.Count; ++j)
+                    {
+                        if(productosB[i].codigo == productosA[j].codigo)
+                        {
+                            estaenB = true;
+                            break;
+                        }
+                    }
+                    if (!estaenB)
+                    {
+                        p = productosB.ElementAt(i);
+                        dataGridView1.Rows.Add(p.codigo, p.digito, p.codProv, p.Nombre, p.costo, p.cantidad, p.precioUnitario);
+                    }
+                    
                 }
             }
             else

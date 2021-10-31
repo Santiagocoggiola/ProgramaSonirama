@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.EntityFrameworkCore.Design.3.1.18\build\net461\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('..\packages\Microsoft.EntityFrameworkCore.Design.3.1.18\build\net461\Microsoft.EntityFrameworkCore.Design.props')" />
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AADC04BB-75F3-499F-9279-60E09AC114AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Sonirama</RootNamespace>
+    <AssemblyName>Sonirama</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>F:\Programa Negocio\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>44A6B67EB48F8C7A45500E66232710B43679BCAF</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>POS_Fiscal_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>68841621_1371666776324018_516501582922121216_n %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.11.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.11.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.1.11\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.1.11\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=3.1.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.3.1.18\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Abstractions, Version=3.1.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Abstractions.3.1.18\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Design, Version=3.1.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Design.3.1.18\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.EntityFrameworkCore.Relational, Version=3.1.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.EntityFrameworkCore.Relational.3.1.18\lib\netstandard2.0\Microsoft.EntityFrameworkCore.Relational.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Abstractions, Version=3.1.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Abstractions.3.1.18\lib\netstandard2.0\Microsoft.Extensions.Caching.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Caching.Memory, Version=3.1.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Caching.Memory.3.1.18\lib\netstandard2.0\Microsoft.Extensions.Caching.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=3.1.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.3.1.18\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=3.1.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.3.1.18\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=3.1.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.3.1.18\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=3.1.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.3.1.18\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.1.18\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=3.1.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.3.1.18\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=3.1.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.3.1.18\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=3.1.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.3.1.18\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.18.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.3.1.18\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.22.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.22\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.7.1\lib\net461\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.7.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.1\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.22\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.22\lib\net452\Zstandard.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ingresos\CargarRemitos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresos\CargarRemitos.Designer.cs">
+      <DependentUpon>CargarRemitos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresos\Remitos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresos\Remitos.Designer.cs">
+      <DependentUpon>Remitos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresos\MostrarModfRemitos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresos\MostrarModfRemitos.Designer.cs">
+      <DependentUpon>MostrarModfRemitos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\FormHelpers.cs" />
+    <Compile Include="Objects\Proveedor.cs" />
+    <Compile Include="Proveedores\ProvAltas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores\ProvAltas.Designer.cs">
+      <DependentUpon>ProvAltas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores\ProvBorrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores\ProvBorrar.Designer.cs">
+      <DependentUpon>ProvBorrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores\ProvConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores\ProvConsultas.Designer.cs">
+      <DependentUpon>ProvConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores\ProvListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores\ProvListado.Designer.cs">
+      <DependentUpon>ProvListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores\ProvModificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores\ProvModificaciones.Designer.cs">
+      <DependentUpon>ProvModificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\Modificacion\CambioInteres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\Modificacion\CambioInteres.Designer.cs">
+      <DependentUpon>CambioInteres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\Modificacion\CambioPrecioGlobal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\Modificacion\CambioPrecioGlobal.Designer.cs">
+      <DependentUpon>CambioPrecioGlobal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresos\IvaCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresos\IvaCompras.Designer.cs">
+      <DependentUpon>IvaCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Factura.cs" />
+    <Compile Include="Stock\VerArticulos\BusquedaPorCodigoProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\VerArticulos\BusquedaPorCodigoProveedor.Designer.cs">
+      <DependentUpon>BusquedaPorCodigoProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\VerArticulos\BusquedaPorCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\VerArticulos\BusquedaPorCompra.Designer.cs">
+      <DependentUpon>BusquedaPorCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\VerArticulos\BusquedaPorNombre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\VerArticulos\BusquedaPorNombre.Designer.cs">
+      <DependentUpon>BusquedaPorNombre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\VerArticulos\BusquedaPorProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\VerArticulos\BusquedaPorProveedor.Designer.cs">
+      <DependentUpon>BusquedaPorProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\VerArticulos\BusquedaPorRubro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\VerArticulos\BusquedaPorRubro.Designer.cs">
+      <DependentUpon>BusquedaPorRubro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresos\ConsultaFactProv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresos\ConsultaFactProv.Designer.cs">
+      <DependentUpon>ConsultaFactProv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresos\CargaIngresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresos\CargaIngresos.Designer.cs">
+      <DependentUpon>CargaIngresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacturacionFolder\NotaCreditoB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturacionFolder\NotaCreditoB.Designer.cs">
+      <DependentUpon>NotaCreditoB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacturacionFolder\NotaCreditoA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturacionFolder\NotaCreditoA.Designer.cs">
+      <DependentUpon>NotaCreditoA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\Modificacion\PMargen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\Modificacion\PMargen.Designer.cs">
+      <DependentUpon>PMargen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\Modificacion\CambioPrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\Modificacion\CambioPrecio.Designer.cs">
+      <DependentUpon>CambioPrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\Modificacion\Cantidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\Modificacion\Cantidades.Designer.cs">
+      <DependentUpon>Cantidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresos\IngreInterno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresos\IngreInterno.Designer.cs">
+      <DependentUpon>IngreInterno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresos\Ingresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresos\Ingresos.Designer.cs">
+      <DependentUpon>Ingresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\Modificacion\Modificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\Modificacion\Modificaciones.Designer.cs">
+      <DependentUpon>Modificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores\ProvInterno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores\ProvInterno.Designer.cs">
+      <DependentUpon>ProvInterno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\VerArticulos\VerArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\VerArticulos\VerArticulos.Designer.cs">
+      <DependentUpon>VerArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Helpers.cs" />
+    <Compile Include="Objects\PrinterErr.cs" />
+    <Compile Include="Objects\PrinterFun.cs" />
+    <Compile Include="Stock\Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\Stock.Designer.cs">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\VerArticulos\VerArtCod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\VerArticulos\VerArtCod.Designer.cs">
+      <DependentUpon>VerArtCod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Printer.cs" />
+    <Compile Include="FacturacionFolder\FacturaB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturacionFolder\FacturaB.Designer.cs">
+      <DependentUpon>FacturaB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacturacionFolder\FacturaA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturacionFolder\FacturaA.Designer.cs">
+      <DependentUpon>FacturaA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacturacionFolder\Facturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturacionFolder\Facturacion.Designer.cs">
+      <DependentUpon>Facturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FacturacionFolder\Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturacionFolder\Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacturacionFolder\VentasDiarias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturacionFolder\VentasDiarias.Designer.cs">
+      <DependentUpon>VentasDiarias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FacturacionFolder\VentasMensuales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacturacionFolder\VentasMensuales.Designer.cs">
+      <DependentUpon>VentasMensuales.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ingresos\CargarRemitos.resx">
+      <DependentUpon>CargarRemitos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresos\MostrarModfRemitos.resx">
+      <DependentUpon>MostrarModfRemitos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresos\Remitos.resx">
+      <DependentUpon>Remitos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\ProvAltas.resx">
+      <DependentUpon>ProvAltas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\ProvBorrar.resx">
+      <DependentUpon>ProvBorrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\ProvConsultas.resx">
+      <DependentUpon>ProvConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\ProvListado.resx">
+      <DependentUpon>ProvListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\ProvModificaciones.resx">
+      <DependentUpon>ProvModificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\Modificacion\CambioInteres.resx">
+      <DependentUpon>CambioInteres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\Modificacion\CambioPrecioGlobal.resx">
+      <DependentUpon>CambioPrecioGlobal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresos\CargaIngresos.resx">
+      <DependentUpon>CargaIngresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturacionFolder\NotaCreditoB.resx">
+      <DependentUpon>NotaCreditoB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturacionFolder\NotaCreditoA.resx">
+      <DependentUpon>NotaCreditoA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresos\ConsultaFactProv.resx">
+      <DependentUpon>ConsultaFactProv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresos\IvaCompras.resx">
+      <DependentUpon>IvaCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\Modificacion\CambioPrecio.resx">
+      <DependentUpon>CambioPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\Modificacion\Cantidades.resx">
+      <DependentUpon>Cantidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturacionFolder\FacturaA.resx">
+      <DependentUpon>FacturaA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturacionFolder\FacturaB.resx">
+      <DependentUpon>FacturaB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturacionFolder\Facturacion.resx">
+      <DependentUpon>Facturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresos\IngreInterno.resx">
+      <DependentUpon>IngreInterno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresos\Ingresos.resx">
+      <DependentUpon>Ingresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\Modificacion\Modificaciones.resx">
+      <DependentUpon>Modificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Proveedores\ProvInterno.resx">
+      <DependentUpon>ProvInterno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\Modificacion\PMargen.resx">
+      <DependentUpon>PMargen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\Stock.resx">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\VerArticulos\BusquedaPorCodigoProveedor.resx">
+      <DependentUpon>BusquedaPorCodigoProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\VerArticulos\BusquedaPorCompra.resx">
+      <DependentUpon>BusquedaPorCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\VerArticulos\BusquedaPorNombre.resx">
+      <DependentUpon>BusquedaPorNombre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\VerArticulos\BusquedaPorProveedor.resx">
+      <DependentUpon>BusquedaPorProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\VerArticulos\BusquedaPorRubro.resx">
+      <DependentUpon>BusquedaPorRubro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\VerArticulos\VerArtCod.resx">
+      <DependentUpon>VerArtCod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\VerArticulos\VerArticulos.resx">
+      <DependentUpon>VerArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturacionFolder\Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturacionFolder\VentasDiarias.resx">
+      <DependentUpon>VentasDiarias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacturacionFolder\VentasMensuales.resx">
+      <DependentUpon>VentasMensuales.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="POS_Fiscal_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="68841621_1371666776324018_516501582922121216_n %281%29.ico" />
+    <Content Include="68841621_1371666776324018_516501582922121216_n.ico" />
+    <Content Include="EpsonFiscalDriver.dll" />
+    <Content Include="EpsonFiscalInterface.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.EntityFrameworkCore.Design.3.1.18\build\net461\Microsoft.EntityFrameworkCore.Design.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.EntityFrameworkCore.Design.3.1.18\build\net461\Microsoft.EntityFrameworkCore.Design.props'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

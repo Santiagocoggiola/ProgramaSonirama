@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace POS_Fiscal
+namespace Sonirama
 {
     public partial class NotaCreditoA : Form
     {
@@ -18,7 +18,8 @@ namespace POS_Fiscal
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        //Busca en la base de datos la factura para cargarla y mostrarla en pantalla.
+        private void BtnBuscar_Click(object sender, EventArgs e)
         {
             dataGridView1.Rows.Clear();
             list = PrinterFun.Buscar(txtComprobante.Text, "stock.ventasa");
@@ -27,14 +28,15 @@ namespace POS_Fiscal
                 PrinterFun.datos dat = list.ElementAt(i);
                 dataGridView1.Rows.Add(dat.NroComprobante, dat.NombreItem, dat.Cantidad, dat.PrecioUnitario, dat.Codigo, dat.Fecha, dat.Doc);
             }
-            button2.Enabled = true;
+            BtnImprimir.Enabled = true;
         }
-        private void button2_Click(object sender, EventArgs e)
+        //Utiliza la factura previamente buscada para imprimirla como nota de credito
+        private void BtnImprimir_Click(object sender, EventArgs e)
         {
             string comprobante = "81-00000-" + txtComprobante.Text;
             string dni = "", nombre = "", direccion = "";
             int condicion = 1;
-            if(comboBox1.GetItemText(comboBox1.SelectedItem) != "Responsable Inscripto")
+            if (comboBox1.GetItemText(comboBox1.SelectedItem) != "Responsable Inscripto")
             {
                 condicion = 4;
             }
@@ -44,7 +46,7 @@ namespace POS_Fiscal
             PrinterFun.ImprimirNotaCredito(comprobante, list, nombre, direccion, 3, dni, condicion, 3, txtDescripcion.Text);
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void BtnAtras_Click(object sender, EventArgs e)
         {
             Facturacion fac = new Facturacion();
             this.Hide();
